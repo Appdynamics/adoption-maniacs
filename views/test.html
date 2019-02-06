@@ -233,7 +233,7 @@
 
 		var text6 = "Let me show you how I am going to change this!";
 		var transition6 = function(){
-			setTimeout(showHowIntro(), 5000 );
+			setTimeout(showHowIntro, 1000 );
 		};
 		script = script.splice(0,2);
 		script.push(new UIStep(text6,transition6,"after"));
