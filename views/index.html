@@ -164,19 +164,19 @@
 <script type="text/javascript" src="/vendor/impress/js/impress.js"></script>
 <script type="text/javascript">
 
-	class UIAction {
-		constructor(text,func,action) {
-			this.text = text;
-			this.func = func;
-			if(action == null){
-				action = "after";
-			}
-		}
+	// class UIAction {
+	// 	constructor(text,func,action) {
+	// 		this.text = text;
+	// 		this.func = func;
+	// 		if(action == null){
+	// 			action = "after";
+	// 		}
+	// 	}
 
-		isAfter(){
-			return 
-		}
-	}
+	// 	isAfter(){
+	// 		return 
+	// 	}
+	// }
 
 	impress().init();
 
@@ -225,9 +225,9 @@
 		script.push([text5,showText5]);
 
 		var text6 = "Let me show you how I am going to change this!";
-		var transition6 = 2000;
-
-		script.push
+		var transition6 = function(){
+			showHowIntro();
+		};
 
 		script.push([text6,transition6]);
 		
