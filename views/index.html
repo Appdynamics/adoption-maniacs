@@ -5,45 +5,24 @@
     <meta charset="utf-8" />
     <title>VA</title>
    <% include ./partials/theme %>
+    <link href="/vendor/impress/css/impress-demo.css" rel="stylesheet" />
 	<script type="text/javascript" src="/vendor/polly/aws-sdk.min.js"></script>
 	<script type="text/javascript" src="/vendor/polly/chattyKatty.js"></script>
 		
 	<style>
-			body{
-				background-color: white;
-			}
-			.step {
-				background-color:white;
+			body {
+				background-color: black;
 			}
 	</style>	
 		
 </head>
 
 <body>
-		<div id="impress" data-autoplay="7">
+		<div id="impress" >
 
-				<!--
-					
-					Here is where interesting thing start to happen.
-					
-					Each step of the presentation should be an element inside the `#impress` with a class name
-					of `step`. These step elements are positioned, rotated and scaled by impress.js, and
-					the 'camera' shows them on each step of the presentation.
-					
-					Positioning information is passed through data attributes.
-					
-					In the example below we only specify x and y position of the step element with `data-x="-1000"`
-					and `data-y="-1500"` attributes. This means that **the center** of the element (yes, the center)
-					will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'.
-					
-					It will not be rotated or scaled.
-					
-					--------
-					Plugins: For first slide, set the autoplay time to a custom 10 seconds.
-					
-				-->
-				<div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
-					<q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+				
+				<div id="welcome" class="step slide" data-x="-1000" data-y="-1500">
+					<div id="welcomeContent"></div>
 				</div>
 			
 				<!--
@@ -200,16 +179,53 @@
 <script type="text/javascript" src="/vendor/impress/js/impress.js"></script>
 <script type="text/javascript">
 	impress().init();
-	var hide = function(){
-		hideElements(["welcome","persona","top3"]);
-	}
+
+	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
+    var settings = {
+        awsCredentials: awsCredentials,
+        awsRegion: "us-west-2",
+        pollyVoiceId: "Joanna",
+        cacheSpeech: true
+    }
+    var ava = ChattyKathy(settings);
 	
 	
 	var welcome = function(){
-		hide();
-		//showElements(["welcome"]);
-		$("#welcome").addClass("lightSpeedIn");
-		setTimeout(personal, 3000);
+		impress().goto(0);
+		var script = [];
+
+		var text1 = "Hello";
+		var showText1 = function(){
+			$("#welcomeContent").html("<q>Welcome</q>");
+		}
+		script.push([text1,showText1]);
+
+		var text2 = "I’m Ayvaa, the AppDynamics Virtual Adoption Assistant.";
+		var showText2 = function(){
+			$("#welcomeContent").html("<q>AVA - AppDynamics Virtual Adoption Assistant</q>");
+		}
+		script.push([text2,showText2]);
+
+		var text3 = "Chuck Robbins recently referred to our CEO, David Wadhwani, as “Mr. AVP”, underscoring that the AVP initiative is critical to AppDee’s goal of becoming a Billion Dollar business unit"
+		var showText3 = function(){
+			$("#welcomeContent").append("<q><strong>Mr. AVP</strong></q>");
+		}
+		script.push([text3,showText3]);
+
+		var text4 = "The AppDee Visibility Pack initiative is an effort to \“seed\” AppDee with 1500 new customers in the hope that some percentage of these customers will try, like and then renew and expand AppDee"
+		var showText4 = function(){
+			$("#welcomeContent").append("<q><strong>1500</strong></q>");
+		}
+		script.push([text4,showText4]);
+		
+		var text5 = "To-date our human-based adoption efforts have resulted in a very low AVP conversion rate of about 5%"
+		var showText5 = function(){
+			$("#welcomeContent").append("<q><strong>5%</strong></q>");
+		}
+		script.push([text5,showText5]);
+		
+		playScript(script,0);
+
 	}
 
 	var personal = function(){
@@ -287,14 +303,17 @@
 	script();
 	
 
-	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
-    var settings = {
-        awsCredentials: awsCredentials,
-        awsRegion: "us-west-2",
-        pollyVoiceId: "Joanna",
-        cacheSpeech: false
-    }
-    var kathy = ChattyKathy(settings);
+	function playScript(script,i){
+		if(script.length > i){
+			var text = script[i][0];
+			var fnc = script[i][1];
+			fnc();
+			ava.SpeakWithPromise(text).then(function(){
+				
+				playScript(script,i+1);
+			});
+		}
+	}
     
 //    kathy.Speak("Hello world, my name is Naveen!");
 //    kathy.Speak("I can be used for an amazing user experience!");
