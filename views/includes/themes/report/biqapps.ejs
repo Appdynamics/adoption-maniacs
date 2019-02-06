@@ -1,0 +1,101 @@
+<link rel="icon" href="data:;base64,=">
+
+<!-- Load jquery -->
+<link href="/vendor/jquery-ui/themes/base/all.css" rel="stylesheet"/>
+<script type="text/javascript" src="/vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/vendor/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+<link type="text/css" href="/analytics/css/jquery.dataTables.min.css" rel="stylesheet"/>
+<script type="text/javascript" src="/vendor/jquery-modal/jquery.modal.min.js"></script>
+<link type="text/css" href="/vendor/jquery-modal/jquery.modal.css" rel="stylesheet"/>
+
+<!-- Load c3 library -->
+<link href="/vendor/c3/c3.css" rel="stylesheet"/>
+<script type="text/javascript" src="/vendor/d3/d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/vendor/c3/c3.min.js"></script>
+<!-- Load dimple -->
+<script src="/vendor/dimple/dimple.v2.2.0.min.js"></script>
+<!-- load animate.css -->
+<link href="/vendor/animate.css/animate.min.css" rel="stylesheet"/>
+<!--jsrender-->
+<script type="text/javascript" src="/vendor/jsrender/jsrender.min.js"></script>
+<!-- load spin.js -->
+<script type="text/javascript" src="/vendor/spin.js/spin.min.js"></script>
+
+ <!-- FontAwesome CSS-->
+ <link href="/vendor/fontawesome-free-5.5.0-web/css/all.min.css" rel="stylesheet"/>
+
+ <!-- Bootstrap CSS-->
+ <link href="/theme-admin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+ <!-- Vendor CSS-->
+ <link href="/theme-admin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/vendor/wow/animate.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/vendor/slick/slick.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+ <!-- Main CSS-->
+ <link href="/theme-admin/css/theme.css" rel="stylesheet" media="all">
+ <link href="/theme-admin/css/dark.css" rel="stylesheet" media="all">
+
+<!-- Jquery JS-->
+<!-- script src="/theme-admin/vendor/jquery-3.2.1.min.js-old"></script-->
+<!-- Bootstrap JS-->
+<!--script src="/theme-admin/vendor/bootstrap-4.1/popper.min.js"></script-->
+<script src="/theme-admin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+<!-- Vendor JS       -->
+<script src="/theme-admin/vendor/slick/slick.min.js">
+</script>
+<script src="/theme-admin/vendor/wow/wow.min.js"></script>
+<script src="/theme-admin/vendor/animsition/animsition.min.js"></script>
+<script src="/theme-admin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+</script>
+<script src="/theme-admin/vendor/counter-up/jquery.waypoints.min.js"></script>
+<script src="/theme-admin/vendor/counter-up/jquery.counterup.min.js">
+</script>
+<script src="/theme-admin/vendor/circle-progress/circle-progress.min.js"></script>
+<script src="/theme-admin/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="/theme-admin/vendor/chartjs/Chart.bundle.min.js"></script>
+<script src="/theme-admin/vendor/select2/select2.min.js"></script>
+<!--plotly-->
+<!--script src="https://cdn.plot.ly/plotly-latest.min.js"></script -->
+
+
+<script type="text/javascript" src="/analytics/js/biq-app.js"></script>
+<script type="text/javascript" src="/analytics/js/biq-app-charts.js"></script>
+<script type="text/javascript" src="/analytics/js/biq-app-group.js"></script>
+<link type="text/css" href="/analytics/css/biq-app.css" rel="stylesheet"/>
+
+<!-- leaflet-->
+<link type="text/css" href="/vendor/leaflet/dist/leaflet.css" rel="stylesheet"/>
+<script type="text/javascript" src="/vendor/leaflet/dist/leaflet.js"></script>
+
+<!--custom scripts-->
+<script type="text/javascript" src="/analytics/js/custom-biq-app.js"></script>
+
+<!--jQuery-TE_v.1.4.0 -->
+<script src="/vendor/jquery-te/jquery-te-1.4.0.min.js"></script>
+<link type="text/css" href="/vendor/jquery-te/jquery-te-1.4.0.css" rel="stylesheet"/>
+
+
+
+<%- include components-templates %>
+<%- include custom-components-templates %>
+
+<script>
+var controller = "<%= controller %>";
+
+var openAdql = function(query,range){
+    query = replaceNulls(query);
+    copyTextToClipBoard(query);
+    var query = escapeQuery(query);
+    var url = controller+"/controller/#/location=ANALYTICS_ADQL_SEARCH&timeRange=Custom_Time_Range.BETWEEN_TIMES."+range.end+"."+range.start+".120&adqlQuery="+query+"&searchType=SINGLE&searchMode=ADVANCED&viewMode=DATA";
+    window.open(url,'_blank');
+}
+</script>
+
+
+

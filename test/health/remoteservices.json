@@ -1,0 +1,4410 @@
+{
+  "data": [
+    {
+      "id": 985646,
+      "name": "Temporary Queue.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703596,
+          "value": 1,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 208,
+            "current": 7,
+            "sum": 29786,
+            "count": 25500,
+            "useRange": true,
+            "groupCount": 700,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 13703597,
+          "value": 425,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 425,
+            "min": 0,
+            "max": 282,
+            "current": 389,
+            "sum": 25500,
+            "count": 420,
+            "useRange": false,
+            "groupCount": 700,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": -1,
+          "value": 25500,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 25500,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991170,
+      "name": "int-deduction.moneydesktop.com:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183731,
+          "value": 526,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 526,
+            "min": 263,
+            "max": 2782,
+            "current": 499,
+            "sum": 5041422,
+            "count": 9593,
+            "useRange": true,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 14183732,
+          "value": 160,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 160,
+            "min": 120,
+            "max": 204,
+            "current": 144,
+            "sum": 9593,
+            "count": 60,
+            "useRange": false,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "errorsPerMinute": {
+          "metricId": 14183733,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": -1,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "numberOfCalls": {
+          "metricId": -1,
+          "value": 9593,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 9593,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991169,
+      "name": "int-live.moneydesktop.com:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183728,
+          "value": 57,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 57,
+            "min": 37,
+            "max": 375,
+            "current": 72,
+            "sum": 281367,
+            "count": 4940,
+            "useRange": true,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 14183729,
+          "value": 82,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 82,
+            "min": 74,
+            "max": 89,
+            "current": 78,
+            "sum": 4940,
+            "count": 60,
+            "useRange": false,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "errorsPerMinute": {
+          "metricId": 14183730,
+          "value": 82,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 82,
+            "min": 74,
+            "max": 89,
+            "current": 78,
+            "sum": 4940,
+            "count": 60,
+            "useRange": false,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "numberOfErrors": {
+          "metricId": -1,
+          "value": 4940,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 4940,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "numberOfCalls": {
+          "metricId": -1,
+          "value": 4940,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 4940,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "artDefined": false,
+        "errorPercentage": 100
+      }
+    },
+    {
+      "id": 991171,
+      "name": "VirtualTopic.com.backbase.pandp.arrangement.query.event.spec.v1.GetArrangementByIdFailedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183698,
+          "value": 1,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 168,
+            "current": 1,
+            "sum": 1649,
+            "count": 1371,
+            "useRange": true,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 14183699,
+          "value": 23,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 23,
+            "min": 20,
+            "max": 27,
+            "current": 23,
+            "sum": 1371,
+            "count": 60,
+            "useRange": false,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": -1,
+          "value": 1371,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 1371,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985683,
+      "name": "VirtualTopic.com.backbase.pandp.arrangement.query.event.spec.v1.GetArrangementByIdSuccessEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704217,
+          "value": 1,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 7,
+            "current": 1,
+            "sum": 620,
+            "count": 551,
+            "useRange": true,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 13704218,
+          "value": 9,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 9,
+            "min": 7,
+            "max": 10,
+            "current": 9,
+            "sum": 551,
+            "count": 60,
+            "useRange": false,
+            "groupCount": 100,
+            "standardDeviation": 0,
+            "occurances": 60
+          }
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": -1,
+          "value": 551,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 551,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998239,
+      "name": "VirtualTopic.com.backbase.pandp.user.query.event.spec.v1.GetUserByExternalIdFailedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998238,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.legalentities.id.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998237,
+      "name": "VirtualTopic.com.backbase.presentation.user.event.spec.v1.LegalentityByUserRetrievedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998236,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.LegalentityGetByIdRetrievedEvent.T",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998235,
+      "name": "com.backbase.billpay.listener.v2.billpay.users.backbaseID.delete.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998234,
+      "name": "com.backbase.pandp.accesscontrol.listener.v2.accesscontrol.accessgroups.data.id.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 998233,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.event.spec.v1.DataAccessGroupUpdatedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997536,
+      "name": "com.backbase.type.service.listener.v2.offensivelanguage.post.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997396,
+      "name": "unresolved_server:-1",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997376,
+      "name": "www.federalreserve.org:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997314,
+      "name": "com.backbase.type.service.listener.v2.userconfig.externalUserId.configKey.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997306,
+      "name": "LDAP Search",
+      "exitPointSubtype": "LDAP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997305,
+      "name": "LDAP Client Search",
+      "exitPointSubtype": "LDAP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 997132,
+      "name": "com.backbase.pandp.arrangement.query.listener.v2.products.internal.externalProductId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14563501,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 14563502,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": -1,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 994018,
+      "name": "int-data.moneydesktop.com:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14475374,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 994007,
+      "name": "com.backbase.type.service.listener.v2.ingest.account.post.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 994006,
+      "name": "TransactionsService",
+      "exitPointSubtype": "WEB_SERVICE",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993989,
+      "name": "com.backbase.type.service.listener.v2.budgets.userId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14419178,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993988,
+      "name": "int-sso.moneydesktop.com:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14419154,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993887,
+      "name": "com.backbase.pandp.user.query.listener.v2.users.id.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993886,
+      "name": "VirtualTopic.com.backbase.pandp.user.query.event.spec.v1.UserByIdRetrievedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993881,
+      "name": "VirtualTopic.com.backbase.transaction.persistence.event.spec.v1.GetTransactionSuccessEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993880,
+      "name": "com.backbase.transaction.persistence.listener.v2.transactions.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993876,
+      "name": "com.backbase.type.service.listener.v2.moneyDesktop.userId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993560,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.PrivilegesSummaryGetRetrievedEvent",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993559,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.UseraccessPermissionsRetrievedEven",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993558,
+      "name": "VirtualTopic.com.backbase.presentation.accessgroup.event.spec.v1.UserPrivilegesSummaryListedEvent.TO",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993557,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.users.privileges.summa",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 993556,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.users.permissions.get.",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 992694,
+      "name": "devsymexchange.wsecu.int:80",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 992392,
+      "name": "VirtualTopic.com.backbase.transaction.persistence.event.spec.v1.GetTransactionForExternalIdSuccessEv",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14252715,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 992391,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.legalentities.id.serviceagreements.",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 992372,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.LegalentityGetMasterServiceAgreeme",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991176,
+      "name": "VirtualTopic.com.backbase.transaction.persistence.event.spec.v1.TransactionsUpdatedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183890,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991168,
+      "name": "VirtualTopic.com.backbase.transaction.persistence.event.spec.v1.TransactionsAddedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991152,
+      "name": "VirtualTopic.com.backbase.presentation.user.event.spec.v1.UserByExternalUserIdRetrievedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182915,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991151,
+      "name": "com.backbase.presentation.accessgroup.listener.v2.accessgroups.users.privileges.arrangements.get.QUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183149,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991150,
+      "name": "com.backbase.presentation.user.listener.v2.users.externalId.externalId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183146,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991149,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.FunctionsListedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182802,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991148,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.UseraccessPrivilegesArrangementsLi",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182799,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991147,
+      "name": "VirtualTopic.com.backbase.presentation.accessgroup.event.spec.v1.ArrangementPrivilegesListedEvent.TO",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182928,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991146,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.config.functions.get.Q",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182923,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 991145,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.users.privileges.arran",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182918,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 990184,
+      "name": "com.backbase.type.service.listener.v1.enrollStatus.primaryId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14181478,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 990183,
+      "name": "VirtualTopic.com.backbase.presentation.account.event.spec.v1.BalanceRetrievedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183001,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 990182,
+      "name": "com.backbase.integration.account.listener.v2.balances.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14182998,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 990177,
+      "name": "com.backbase.presentation.account.listener.v2.accounts.balance.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 14183140,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985686,
+      "name": "VirtualTopic.com.backbase.pandp.arrangement.event.spec.v1.ArrangementUpdatedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704227,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985685,
+      "name": "VirtualTopic.com.backbase.pandp.arrangement.query.event.spec.v1.GetInternalIdForExternalIdSuccessEve",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704224,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985684,
+      "name": "VirtualTopic.com.backbase.pandp.arrangement.query.event.spec.v1.GetArrangementsSuccessEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704221,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985682,
+      "name": "com.backbase.pandp.accesscontrol.listener.v2.accesscontrol.accessgroups.users.permissions.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703835,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985679,
+      "name": "com.backbase.type.service.listener.v2.userprofilemaintenance.user.license.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703740,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985678,
+      "name": "com.backbase.audit.presentation.listener.v2.auditmessages.post.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703737,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985677,
+      "name": "VirtualTopic.com.backbase.wsecu.actions.event.spec.v1.UserLoginEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703734,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985676,
+      "name": "com.backbase.audit.presentation.listener.v2.auditlog.messages.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704596,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985675,
+      "name": "com.backbase.type.service.listener.v2.config.id.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704252,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985674,
+      "name": "com.backbase.type.service.listener.v2.ingest.user.post.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703731,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985673,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.LegalentityGetByExternalIdRetrieve",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705616,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985671,
+      "name": "com.backbase.pandp.arrangement.query.listener.v2.arrangements.internal.externalArrangementId.get.QUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705480,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985670,
+      "name": "com.backbase.pandp.arrangement.listener.v2.arrangement.id.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705475,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985669,
+      "name": "com.backbase.pandp.arrangement.query.listener.v2.arrangements.id.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985668,
+      "name": "VirtualTopic.com.backbase.presentation.account.event.spec.v1.ArrangementPutedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705465,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985667,
+      "name": "VirtualTopic.com.backbase.pandp.user.query.event.spec.v1.UserByExternalIdRetrievedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704521,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985666,
+      "name": "com.backbase.dbs.persistence.notifications.listener.v2.notifications.latest.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13708180,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985664,
+      "name": "com.backbase.pandp.user.query.listener.v2.users.externalId.externalId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706733,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985663,
+      "name": "com.backbase.pandp.accesscontrol.listener.v2.accesscontrol.accessgroups.function.id.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706730,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985662,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.users.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706727,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985661,
+      "name": "com.backbase.presentation.account.listener.v2.arrangements.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706721,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985660,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.function.functionGroup",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706718,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985659,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.legalentities.external.externalId.g",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706715,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985658,
+      "name": "com.backbase.type.service.listener.v1.login.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706712,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985657,
+      "name": "com.backbase.billpay.listener.v2.billpay.users.backbaseID.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706709,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985656,
+      "name": "com.backbase.type.service.listener.v2.userconfig.externalUserId.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706703,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985655,
+      "name": "com.backbase.pandp.arrangement.query.listener.v2.arrangements.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706700,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985654,
+      "name": "com.backbase.presentation.accessgroup.listener.v2.accessgroups.users.permissions.put.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706697,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985653,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.event.spec.v1.PermissionsUpdatedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13703832,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985652,
+      "name": "com.backbase.pandp.accesscontrol.query.listener.v2.accesscontrol.accessgroups.data.id.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13706694,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985651,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.event.spec.v1.FunctionAccessGroupUpdatedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705610,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985650,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.DataAccessGroupGetByIdRetrievedEve",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705607,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985649,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.UseraccessListedEvent.TOPIC",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705604,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985648,
+      "name": "VirtualTopic.com.backbase.pandp.accesscontrol.query.event.spec.v1.FunctionAccessGroupGetByIdRetrieve",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13705601,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985647,
+      "name": "com.backbase.type.service.listener.v2.userconfig.externalUserId.configKey.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704249,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985645,
+      "name": "com.backbase.audit.persistence.command.listener.v2.auditmessages.post.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704964,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985644,
+      "name": "com.backbase.audit.persistence.query.listener.v2.auditlog.messages.get.QUEUE",
+      "exitPointSubtype": "JMS",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13704959,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985436,
+      "name": "PowerOnService",
+      "exitPointSubtype": "WEB_SERVICE",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13617618,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985392,
+      "name": "AccountService",
+      "exitPointSubtype": "WEB_SERVICE",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13611865,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985281,
+      "name": "testregistration.wsecu.int:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13604744,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 13604746,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": -1,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    },
+    {
+      "id": 985280,
+      "name": "testlinuxidm.wsecu.int:443",
+      "exitPointSubtype": "HTTP",
+      "performanceStats": {
+        "averageResponseTime": {
+          "metricId": 13604741,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "endToEndLatencyTime": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "callsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "errorsPerMinute": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfErrors": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "numberOfCalls": {
+          "metricId": 0,
+          "value": 0,
+          "standardDeviation": 0,
+          "metricValue": null
+        },
+        "artDefined": false,
+        "errorPercentage": 0
+      }
+    }
+  ],
+  "totalCount": 93
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>APR Report Login</title>
+<meta charset="UTF-8">
+<% include ./partials/theme %>
+<script type="text/javascript" src="/auth/biqapp-auth.js"></script>
+<style>
+.au-btn-blue {
+    background:#7A66FF;
+}
+
+body{
+    background: url(/img/login-electrons1.svg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #19212B;
+}
+input{
+    background-color:#dbdfe2;
+}
+</style>
+</head>
+<body>
+    <div class="page-wrapper">
+            <div class="container">
+                <div id="login-form" class="login-wrap">
+                    <div class="login-content">
+                        <div class="login-logo">
+                            <a href="#">
+                                <img id="logo" width="400px;" src="/img/AppDynamicsLogo_black.svg"/> 
+                            </a>
+                        </div>
+                        <div class="login-form">
+                            <div class="form-group">
+                                <label>Controller URL</label>
+                                <input id="controller" class="au-input au-input--full" type="text" name="controller" placeholder="https://customer1.saas.appdynamics.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Account</label>
+                                <input id="account" class="au-input au-input--full" type="text" name="account" placeholder="customer1">
+                            </div>
+                            <div class="form-group">
+                                <label>User Name</label>
+                                <input id="username" class="au-input au-input--full" type="text" name="user" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input id="password" class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                            </div>
+                            <label id="message" class="alert alert-danger">Message : </label>
+                            <button id="loginButton" class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">sign in</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+</body>
+<script type="text/javascript">
+    $("#message").hide();
+    $("#loginButton").click(function(){
+        $("#message").hide();
+        var controller = $("#controller").val();
+        var account = $("#account").val();
+        var username = $("#username").val();
+        var password = $("#password").val();
+        $('#login-form').removeClass('animated shake');
+        console.log(controller+" "+account+" "+username+" "+password);
+        biqAppLogin(controller,account,username,password,function(results){
+            if(results.auth === "failed"){
+                $("#message").show();
+                $("#message").html("Message : "+results.message);
+                $('#login-form').addClass('animated shake');
+            }else{
+                window.location.href='/views/index.html';
+            }
+        })
+    })
+
+</script>
+</html>

@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+var configManager = require('../src/ConfigManager');
+var app = require('../app');
+const https = require('https');
+const http = require('http');
+const fs = require('fs')
+
+//var server = require('http').Server(app);
+
+var port = process.env.PORT || configManager.getLocalPort();
+
+app.set('port', port);
+
+/**
+ * make a log directory, just in case it isn't there.
+ */
+try {
+  fs.mkdirSync('./log');
+} catch (e) {
+  if (e.code != 'EEXIST') {
+    console.error("Could not set up log directory, error was: ", e);
+    process.exit(1);
+  }
+}
+
+if(configManager.isLocalHttpsConfigured()){
+  const httpsOptions = {
+    key: fs.readFileSync('./key.pem'),
+    cert: fs.readFileSync('./cert.pem'),
+    passphrase: 'biqapps'
+  }
+  const server = https.createServer(httpsOptions, app).listen(port, () => {
+    console.log('server running at ' + port)
+  })
+}else{
+  const server = http.createServer(app).listen(port, () => {
+    console.log('server running at ' + port)
+  })
+}
+
+

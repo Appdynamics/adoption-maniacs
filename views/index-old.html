@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Cube | Explore impress.js in 3D | by Henrik Ingo @henrikingo</title>
+    <meta name="description" content="Explore impress.js in 3D" />
+	<meta name="author" content="Henrik Ingo" />
+	<% include ./partials/theme %>
+	<link href="/vendor/impress/css/cube.css" rel="stylesheet" />
+	<script type="text/javascript" src="/vendor/polly/aws-sdk.min.js"></script>
+	<script type="text/javascript" src="/vendor/polly/chattyKatty.js"></script>
+		
+	<style>
+			body{
+				background-color: white;
+			}
+			.step {
+				background-color:white;
+			}
+	</style>	
+		
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="1000">
+
+    <div class="step" data-x="0" data-y="0" data-z="350"
+         data-goto-key-list="ArrowRight ArrowLeft o" data-goto-next-list="step-2 step-4 overview">
+        <div id="issue1"></div>
+    </div>
+
+    <div class="step" data-x="350" data-y="0" data-z="0" data-rotate-y="90"
+         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-4 step-3 step-6 step-1 overview">
+		 <div id="issue2"></div>
+    </div>
+
+    <div class="step" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90"
+         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-2 step-5 step-6 step-1 overview">
+		 <div id="issue3"></div>
+    </div>
+
+    <div class="step" data-x="0" data-y="-350" data-z="0" data-rotate-x="90" data-rotate-z="-90"
+         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-5 step-2 step-6 step-1 overview">
+		 <div id="issue4"></div>
+    </div>
+
+    <div class="step" data-x="-350" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180"
+         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-3 step-4 step-6 step-1 overview">
+        <p>Slide five</p>
+    </div>
+
+    <div class="step" data-x="0" data-y="0" data-z="-350" data-rotate-y="-180" data-rotate-z="-180"
+         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-3 step-4 step-2 step-5 overview">
+        <p>Slide six</p>
+    </div>
+
+    <div id="overview" class="step" data-x="700" data-y="-100" data-z="1000" data-scale="1" style="pointer-events: none;">
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+<div id="impress-help"></div>
+
+</body>
+<script type="text/javascript" src="/vendor/impress/js/impress.js"></script>
+<script type="text/javascript">
+	impress().init();
+
+	new BoxChartComponent({
+		title:"Total Revenue",
+		targetId:"issue1",
+		action:"Revenue Dashboard",
+		actionClick: "window.location.href ='/views/examples/boxcomponent.html'",
+		icon:"fa fa-shopping-cart fa-5x",
+		value:"2 Million",
+		panelClass:"overview-item--c1",
+		options:{height:"400px", width:"400px"}
+	}).draw();
+
+	var chartData =[
+		[1532966193039,5],
+		[1532966013039,10],
+		[1532965833039,20],
+		[1532965593039,7],
+		[1532965293039,30]
+	];
+
+	new TimeChart({
+		targetId:"issue2",
+		data : chartData,
+		options:{height:"400px", width:"400px"}
+	}).draw(function(selection){
+		alert(JSON.stringify(selection));
+	})
+
+	var table_data = [
+			["Apple",1000],
+			["Amazon",2000],
+			["Cisco",3000],
+			["AppDynamics",4000],
+		]
+
+	new Table({
+		targetId:"issue3",
+		title:"Errors By Customers",
+		data:table_data,
+		columns: [{ title: "Customer" },{ title: "Counts" }],
+		options : {
+			"searching": false,
+			"paging": false,
+			"ordering": false
+		}
+	}).draw(function(row){
+		alert(JSON.stringify(row));
+	});
+
+	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
+    var settings = {
+        awsCredentials: awsCredentials,
+        awsRegion: "us-west-2",
+        pollyVoiceId: "Joanna",
+        cacheSpeech: false
+    }
+    var kathy = ChattyKathy(settings);
+    
+//    kathy.Speak("Hello world, my name is Naveen!");
+//    kathy.Speak("I can be used for an amazing user experience!");
+
+
+</script>
+</html>

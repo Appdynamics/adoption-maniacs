@@ -1,0 +1,6305 @@
+{
+  "frequency": "ONE_MIN",
+  "averageResponseTimeData": {
+    "metricId": 24639682,
+    "metricName": "BTM|BTs|BT:484473|Component:22811|Average Response Time (ms)",
+    "frequency": "ONE_MIN",
+    "dataTimeslices": [
+      {
+        "startTime": 1539876000000,
+        "metricValue": {
+          "value": 13,
+          "min": 0,
+          "max": 984,
+          "current": 0,
+          "sum": 16207,
+          "count": 1238,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876060000,
+        "metricValue": {
+          "value": 7,
+          "min": 0,
+          "max": 547,
+          "current": 0,
+          "sum": 7971,
+          "count": 1197,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876120000,
+        "metricValue": {
+          "value": 8,
+          "min": 0,
+          "max": 829,
+          "current": 0,
+          "sum": 10567,
+          "count": 1305,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876180000,
+        "metricValue": {
+          "value": 6,
+          "min": 0,
+          "max": 609,
+          "current": 0,
+          "sum": 6455,
+          "count": 1003,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876240000,
+        "metricValue": {
+          "value": 7,
+          "min": 0,
+          "max": 547,
+          "current": 16,
+          "sum": 9088,
+          "count": 1249,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876300000,
+        "metricValue": {
+          "value": 6,
+          "min": 0,
+          "max": 563,
+          "current": 0,
+          "sum": 7630,
+          "count": 1202,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876360000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 562,
+          "current": 0,
+          "sum": 13025,
+          "count": 1403,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876420000,
+        "metricValue": {
+          "value": 11,
+          "min": 0,
+          "max": 1563,
+          "current": 0,
+          "sum": 13046,
+          "count": 1227,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876480000,
+        "metricValue": {
+          "value": 6,
+          "min": 0,
+          "max": 906,
+          "current": 0,
+          "sum": 8022,
+          "count": 1268,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876540000,
+        "metricValue": {
+          "value": 11,
+          "min": 0,
+          "max": 671,
+          "current": 0,
+          "sum": 11557,
+          "count": 1085,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876600000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 844,
+          "current": 0,
+          "sum": 12126,
+          "count": 1360,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876660000,
+        "metricValue": {
+          "value": 15,
+          "min": 0,
+          "max": 844,
+          "current": 15,
+          "sum": 21058,
+          "count": 1379,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876720000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 797,
+          "current": 0,
+          "sum": 11636,
+          "count": 964,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876780000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 657,
+          "current": 0,
+          "sum": 10111,
+          "count": 1007,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876840000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 797,
+          "current": 16,
+          "sum": 11032,
+          "count": 1212,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876900000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 859,
+          "current": 0,
+          "sum": 13228,
+          "count": 1349,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539876960000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 547,
+          "current": 0,
+          "sum": 10372,
+          "count": 1114,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877020000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 578,
+          "current": 0,
+          "sum": 10401,
+          "count": 1050,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877080000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 1000,
+          "current": 0,
+          "sum": 11400,
+          "count": 1216,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877140000,
+        "metricValue": {
+          "value": 6,
+          "min": 0,
+          "max": 500,
+          "current": 0,
+          "sum": 6020,
+          "count": 1012,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877200000,
+        "metricValue": {
+          "value": 7,
+          "min": 0,
+          "max": 516,
+          "current": 0,
+          "sum": 8530,
+          "count": 1278,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877260000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 844,
+          "current": 0,
+          "sum": 13869,
+          "count": 1332,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877320000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 968,
+          "current": 0,
+          "sum": 13444,
+          "count": 1123,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877380000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 594,
+          "current": 0,
+          "sum": 10423,
+          "count": 1147,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877440000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 656,
+          "current": 0,
+          "sum": 12372,
+          "count": 992,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877500000,
+        "metricValue": {
+          "value": 7,
+          "min": 0,
+          "max": 532,
+          "current": 0,
+          "sum": 10136,
+          "count": 1360,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877560000,
+        "metricValue": {
+          "value": 13,
+          "min": 0,
+          "max": 875,
+          "current": 0,
+          "sum": 17014,
+          "count": 1356,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877620000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 891,
+          "current": 0,
+          "sum": 11546,
+          "count": 1105,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877680000,
+        "metricValue": {
+          "value": 8,
+          "min": 0,
+          "max": 656,
+          "current": 0,
+          "sum": 9814,
+          "count": 1200,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877740000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 500,
+          "current": 0,
+          "sum": 10978,
+          "count": 1230,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877800000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 766,
+          "current": 0,
+          "sum": 14207,
+          "count": 1175,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877860000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 828,
+          "current": 0,
+          "sum": 12360,
+          "count": 1256,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877920000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 890,
+          "current": 0,
+          "sum": 13558,
+          "count": 1361,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539877980000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 719,
+          "current": 0,
+          "sum": 12395,
+          "count": 1306,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878040000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 828,
+          "current": 0,
+          "sum": 13242,
+          "count": 1281,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878100000,
+        "metricValue": {
+          "value": 6,
+          "min": 0,
+          "max": 500,
+          "current": 0,
+          "sum": 7845,
+          "count": 1225,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878160000,
+        "metricValue": {
+          "value": 11,
+          "min": 0,
+          "max": 813,
+          "current": 0,
+          "sum": 14001,
+          "count": 1263,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878220000,
+        "metricValue": {
+          "value": 16,
+          "min": 0,
+          "max": 860,
+          "current": 0,
+          "sum": 17982,
+          "count": 1142,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878280000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 984,
+          "current": 0,
+          "sum": 15788,
+          "count": 1319,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878340000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 844,
+          "current": 0,
+          "sum": 11453,
+          "count": 1336,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878400000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 796,
+          "current": 0,
+          "sum": 13559,
+          "count": 1106,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878460000,
+        "metricValue": {
+          "value": 12,
+          "min": 0,
+          "max": 922,
+          "current": 0,
+          "sum": 16487,
+          "count": 1323,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878520000,
+        "metricValue": {
+          "value": 8,
+          "min": 0,
+          "max": 765,
+          "current": 0,
+          "sum": 10526,
+          "count": 1243,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878580000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 578,
+          "current": 0,
+          "sum": 12814,
+          "count": 1278,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878640000,
+        "metricValue": {
+          "value": 11,
+          "min": 0,
+          "max": 531,
+          "current": 0,
+          "sum": 11699,
+          "count": 1090,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878700000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 735,
+          "current": 0,
+          "sum": 12398,
+          "count": 1272,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878760000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 937,
+          "current": 0,
+          "sum": 10446,
+          "count": 1064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878820000,
+        "metricValue": {
+          "value": 7,
+          "min": 0,
+          "max": 578,
+          "current": 15,
+          "sum": 8117,
+          "count": 1184,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878880000,
+        "metricValue": {
+          "value": 8,
+          "min": 0,
+          "max": 781,
+          "current": 0,
+          "sum": 11654,
+          "count": 1468,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539878940000,
+        "metricValue": {
+          "value": 15,
+          "min": 0,
+          "max": 1000,
+          "current": 0,
+          "sum": 13652,
+          "count": 929,
+          "useRange": true,
+          "groupCount": 1500,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879000000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 906,
+          "current": 0,
+          "sum": 12697,
+          "count": 1233,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879060000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 844,
+          "current": 0,
+          "sum": 10950,
+          "count": 1254,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879120000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 735,
+          "current": 0,
+          "sum": 12227,
+          "count": 1218,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879180000,
+        "metricValue": {
+          "value": 8,
+          "min": 0,
+          "max": 609,
+          "current": 0,
+          "sum": 10714,
+          "count": 1263,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879240000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 579,
+          "current": 0,
+          "sum": 10925,
+          "count": 1167,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879300000,
+        "metricValue": {
+          "value": 9,
+          "min": 0,
+          "max": 781,
+          "current": 0,
+          "sum": 10874,
+          "count": 1238,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879360000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 781,
+          "current": 0,
+          "sum": 11418,
+          "count": 1169,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      {
+        "startTime": 1539879420000,
+        "metricValue": {
+          "value": 11,
+          "min": 0,
+          "max": 625,
+          "current": 0,
+          "sum": 10563,
+          "count": 969,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 0,
+          "occurances": 0
+        }
+      },
+      { "startTime": 1539879480000, "metricValue": null },
+      { "startTime": 1539879540000, "metricValue": null }
+    ],
+    "latestTimesliceData": 11
+  },
+  "averageResponseTimeBaselineData": {
+    "metricId": 24639682,
+    "metricName": null,
+    "frequency": "ONE_MIN",
+    "dataTimeslices": [
+      {
+        "startTime": 1539876000000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876060000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876120000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876180000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876240000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876300000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876360000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876420000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876480000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876540000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876600000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876660000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876720000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876780000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876840000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876900000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539876960000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877020000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877080000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877140000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877200000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877260000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877320000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877380000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877440000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877500000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877560000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877620000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877680000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877740000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877800000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877860000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877920000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539877980000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878040000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878100000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878160000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878220000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878280000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878340000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80611,
+          "current": 155,
+          "sum": 18485490,
+          "count": 1891412,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 150.45103057905553,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878400000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878460000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878520000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878580000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878640000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878700000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878760000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878820000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878880000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539878940000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879000000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879060000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879120000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879180000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879240000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879300000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879360000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      {
+        "startTime": 1539879420000,
+        "metricValue": {
+          "value": 10,
+          "min": 0,
+          "max": 80814,
+          "current": 79,
+          "sum": 19120235,
+          "count": 1995064,
+          "useRange": true,
+          "groupCount": 1600,
+          "standardDeviation": 173.08371929887676,
+          "occurances": 30
+        }
+      },
+      { "startTime": 1539879480000, "metricValue": null },
+      { "startTime": 1539879540000, "metricValue": null }
+    ],
+    "latestTimesliceData": 10
+  },
+  "histogramDataMap": {
+    "VERY_SLOW": {
+      "metricId": 24639693,
+      "metricName": null,
+      "frequency": null,
+      "dataTimeslices": [
+        {
+          "startTime": 1539876000000,
+          "metricValue": {
+            "value": 6,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876060000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876120000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876180000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876240000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876300000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876360000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876420000,
+          "metricValue": {
+            "value": 5,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876480000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876540000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876600000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876660000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876720000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876780000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876840000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876900000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876960000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877020000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877080000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877140000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877200000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877260000,
+          "metricValue": {
+            "value": 4,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877320000,
+          "metricValue": {
+            "value": 5,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877380000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877440000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877500000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877560000,
+          "metricValue": {
+            "value": 7,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877620000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877680000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877740000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877800000,
+          "metricValue": {
+            "value": 4,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877860000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877920000,
+          "metricValue": {
+            "value": 4,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877980000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878040000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878100000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878160000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878220000,
+          "metricValue": {
+            "value": 5,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878280000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878340000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878400000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878460000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878520000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878580000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878640000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878700000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878760000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878820000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878880000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878940000,
+          "metricValue": {
+            "value": 7,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879000000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879060000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879120000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879180000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879240000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879300000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879360000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879420000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        }
+      ],
+      "latestTimesliceData": 0
+    },
+    "SLOW": {
+      "metricId": 24639692,
+      "metricName": null,
+      "frequency": null,
+      "dataTimeslices": [
+        {
+          "startTime": 1539876000000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876060000,
+          "metricValue": {
+            "value": 7,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876120000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876180000,
+          "metricValue": {
+            "value": 5,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876240000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876300000,
+          "metricValue": {
+            "value": 5,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876360000,
+          "metricValue": {
+            "value": 15,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876420000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876480000,
+          "metricValue": {
+            "value": 4,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876540000,
+          "metricValue": {
+            "value": 12,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876600000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876660000,
+          "metricValue": {
+            "value": 18,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876720000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876780000,
+          "metricValue": {
+            "value": 9,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876840000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876900000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876960000,
+          "metricValue": {
+            "value": 12,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877020000,
+          "metricValue": {
+            "value": 12,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877080000,
+          "metricValue": {
+            "value": 7,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877140000,
+          "metricValue": {
+            "value": 2,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877200000,
+          "metricValue": {
+            "value": 7,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877260000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877320000,
+          "metricValue": {
+            "value": 9,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877380000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877440000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877500000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877560000,
+          "metricValue": {
+            "value": 12,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877620000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877680000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877740000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877800000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877860000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877920000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877980000,
+          "metricValue": {
+            "value": 12,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878040000,
+          "metricValue": {
+            "value": 12,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878100000,
+          "metricValue": {
+            "value": 6,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878160000,
+          "metricValue": {
+            "value": 15,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878220000,
+          "metricValue": {
+            "value": 20,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878280000,
+          "metricValue": {
+            "value": 17,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878340000,
+          "metricValue": {
+            "value": 7,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878400000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878460000,
+          "metricValue": {
+            "value": 6,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878520000,
+          "metricValue": {
+            "value": 9,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878580000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878640000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878700000,
+          "metricValue": {
+            "value": 13,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878760000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878820000,
+          "metricValue": {
+            "value": 6,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878880000,
+          "metricValue": {
+            "value": 9,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878940000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879000000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879060000,
+          "metricValue": {
+            "value": 8,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879120000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879180000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879240000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879300000,
+          "metricValue": {
+            "value": 10,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879360000,
+          "metricValue": {
+            "value": 9,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879420000,
+          "metricValue": {
+            "value": 11,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        }
+      ],
+      "latestTimesliceData": 0
+    },
+    "STALL": {
+      "metricId": 24639695,
+      "metricName": null,
+      "frequency": null,
+      "dataTimeslices": [
+        {
+          "startTime": 1539876000000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876060000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876120000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876180000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876240000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876300000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876360000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876420000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876600000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876660000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876720000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876780000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876840000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876900000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876960000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877020000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877080000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877140000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877200000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877260000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877320000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877380000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877440000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877500000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877560000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877620000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877680000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877740000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877800000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877860000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877920000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877980000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878040000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878100000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878160000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878220000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878280000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878340000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878400000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878460000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878520000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878580000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878640000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878700000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878760000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878820000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878880000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878940000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879000000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879060000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879120000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879180000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879240000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879300000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879360000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879420000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        }
+      ],
+      "latestTimesliceData": 0
+    },
+    "ERROR": {
+      "metricId": 24639690,
+      "metricName": null,
+      "frequency": null,
+      "dataTimeslices": [
+        {
+          "startTime": 1539876000000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876060000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876120000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876180000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876240000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876300000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876360000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876420000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876600000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876660000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876720000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876780000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876840000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876900000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876960000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877020000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877080000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877140000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877200000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877260000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877320000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877380000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877440000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877500000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877560000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877620000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877680000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877740000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877800000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877860000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877920000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877980000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878040000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878100000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878160000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878220000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878280000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878340000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878400000,
+          "metricValue": {
+            "value": 3,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878460000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878520000,
+          "metricValue": {
+            "value": 1,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878580000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878640000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878700000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878760000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878820000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878880000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878940000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879000000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879060000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879120000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879180000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879240000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879300000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879360000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879420000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        }
+      ],
+      "latestTimesliceData": 0
+    },
+    "NORMAL": {
+      "metricId": -1,
+      "metricName": null,
+      "frequency": null,
+      "dataTimeslices": [
+        {
+          "startTime": 1539876000000,
+          "metricValue": {
+            "value": 1219,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876060000,
+          "metricValue": {
+            "value": 1190,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876120000,
+          "metricValue": {
+            "value": 1294,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876180000,
+          "metricValue": {
+            "value": 997,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876240000,
+          "metricValue": {
+            "value": 1241,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876300000,
+          "metricValue": {
+            "value": 1197,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876360000,
+          "metricValue": {
+            "value": 1388,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876420000,
+          "metricValue": {
+            "value": 1214,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876480000,
+          "metricValue": {
+            "value": 1263,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876540000,
+          "metricValue": {
+            "value": 1072,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876600000,
+          "metricValue": {
+            "value": 1349,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876660000,
+          "metricValue": {
+            "value": 1353,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876720000,
+          "metricValue": {
+            "value": 950,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876780000,
+          "metricValue": {
+            "value": 997,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876840000,
+          "metricValue": {
+            "value": 1202,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876900000,
+          "metricValue": {
+            "value": 1336,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539876960000,
+          "metricValue": {
+            "value": 1102,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877020000,
+          "metricValue": {
+            "value": 1038,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877080000,
+          "metricValue": {
+            "value": 1206,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877140000,
+          "metricValue": {
+            "value": 1010,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877200000,
+          "metricValue": {
+            "value": 1271,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877260000,
+          "metricValue": {
+            "value": 1318,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877320000,
+          "metricValue": {
+            "value": 1109,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877380000,
+          "metricValue": {
+            "value": 1136,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877440000,
+          "metricValue": {
+            "value": 977,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877500000,
+          "metricValue": {
+            "value": 1352,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877560000,
+          "metricValue": {
+            "value": 1337,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877620000,
+          "metricValue": {
+            "value": 1092,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877680000,
+          "metricValue": {
+            "value": 1191,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877740000,
+          "metricValue": {
+            "value": 1219,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877800000,
+          "metricValue": {
+            "value": 1158,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877860000,
+          "metricValue": {
+            "value": 1243,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877920000,
+          "metricValue": {
+            "value": 1347,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539877980000,
+          "metricValue": {
+            "value": 1292,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878040000,
+          "metricValue": {
+            "value": 1266,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878100000,
+          "metricValue": {
+            "value": 1219,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878160000,
+          "metricValue": {
+            "value": 1246,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878220000,
+          "metricValue": {
+            "value": 1117,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878280000,
+          "metricValue": {
+            "value": 1299,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878340000,
+          "metricValue": {
+            "value": 1326,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878400000,
+          "metricValue": {
+            "value": 1091,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878460000,
+          "metricValue": {
+            "value": 1307,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878520000,
+          "metricValue": {
+            "value": 1233,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878580000,
+          "metricValue": {
+            "value": 1265,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878640000,
+          "metricValue": {
+            "value": 1077,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878700000,
+          "metricValue": {
+            "value": 1258,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878760000,
+          "metricValue": {
+            "value": 1053,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878820000,
+          "metricValue": {
+            "value": 1178,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878880000,
+          "metricValue": {
+            "value": 1457,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539878940000,
+          "metricValue": {
+            "value": 914,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879000000,
+          "metricValue": {
+            "value": 1220,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879060000,
+          "metricValue": {
+            "value": 1244,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879120000,
+          "metricValue": {
+            "value": 1205,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879180000,
+          "metricValue": {
+            "value": 1252,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879240000,
+          "metricValue": {
+            "value": 1157,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879300000,
+          "metricValue": {
+            "value": 1227,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879360000,
+          "metricValue": {
+            "value": 1158,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879420000,
+          "metricValue": {
+            "value": 957,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879480000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        },
+        {
+          "startTime": 1539879540000,
+          "metricValue": {
+            "value": 0,
+            "min": 0,
+            "max": 0,
+            "current": 0,
+            "sum": 0,
+            "count": 0,
+            "useRange": false,
+            "groupCount": 0,
+            "standardDeviation": 0,
+            "occurances": 0
+          }
+        }
+      ],
+      "latestTimesliceData": 0
+    }
+  }
+}
