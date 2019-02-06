@@ -21,27 +21,12 @@
 		<div id="impress" >
 
 				
-				<div id="welcome" class="step slide" data-x="-1000" data-y="-1500">
+				<div class="step slide" data-x="-1000" data-y="-1500">
 					<div id="welcomeContent"></div>
 				</div>
 			
-				<!--
-					
-					The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-					If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-					
-					So in the example below it'll be `step-2`.
-					
-					The hash part of the url when this step is active will be `#/step-2`.
-					
-					You can also use `#step-2` in a link, to point directly to this particular step.
-					
-					Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-					Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-					
-				-->
 				<div class="step slide" data-x="0" data-y="-1500">
-					<q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
+					<div id="showContent"></div>
 				</div>
 			
 				<div class="step slide" data-x="1000" data-y="-1500">
@@ -178,6 +163,9 @@
 		
 <script type="text/javascript" src="/vendor/impress/js/impress.js"></script>
 <script type="text/javascript">
+
+	
+
 	impress().init();
 
 	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
@@ -202,7 +190,7 @@
 
 		var text2 = "I’m Ayvaa, the AppDynamics Virtual Adoption Assistant.";
 		var showText2 = function(){
-			$("#welcomeContent").html("<q>AVA - AppDynamics Virtual Adoption Assistant</q>");
+			$("#welcomeContent").html("<q><strong>AVAA</strong></q> <q>AppDynamics Virtual Adoption Assistant</q>");
 		}
 		script.push([text2,showText2]);
 
@@ -223,16 +211,32 @@
 			$("#welcomeContent").append("<q><strong>5%</strong></q>");
 		}
 		script.push([text5,showText5]);
+
+		var text6 = "Let me show you how I am going to change this!";
+		var transition6 = 2000;
+
+		script = script.slice(0,2);
+
+		script.push([text6,transition6]);
 		
 		playScript(script,0);
-
 	}
 
-	var personal = function(){
-		hide();
-		//showElements(["persona"]);
-		$("#persona").addClass("lightSpeedIn");
-		setTimeout(top3, 3000);
+	var showHowIntro = function (){
+		impress().goto(1);
+		var script = [];
+		var text1 = "I will Analyzing the follow Customer Controller";
+		var showText1 = function(){
+			$("#showContent").append("<q>Using ML algorithm to detect issues on Controller</q> <p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p>");
+		}
+		script.push([text1,showText1]);
+
+		var text2 = "We have identified 3 issues that I will walk you through."
+		var showText2 = function(){
+			$("#showContent").append("Top 3 Issues");
+		}
+		script.push([text2,showText2]);
+		playScript(script,0);
 	}
 
 	var top3 = function(){
@@ -307,17 +311,25 @@
 		if(script.length > i){
 			var text = script[i][0];
 			var fnc = script[i][1];
-			fnc();
-			ava.SpeakWithPromise(text).then(function(){
-				
-				playScript(script,i+1);
-			});
+			if (isFunction(fnc)){
+				fnc();
+			}else{
+
+			}
+			if(text){
+				ava.SpeakWithPromise(text).then(function(){
+					playScript(script,i+1);
+				});
+			}
 		}
 	}
     
-//    kathy.Speak("Hello world, my name is Naveen!");
+    //ava.Speak("<speak>Hello, I’m Ayvaa, the AppDynamics Virtual Adoption Assistant <emphasis level=\"strong\">I’m here to change that!</emphasis></speak>");
 //    kathy.Speak("I can be used for an amazing user experience!");
 
+	function isFunction(functionToCheck) {
+		return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+	}
 
 </script>
 </html>
