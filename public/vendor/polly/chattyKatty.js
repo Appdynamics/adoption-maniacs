@@ -26,9 +26,13 @@ function ChattyKathy(settings) {
 
     // Add audio node to html
     var elementId = "audioElement" + new Date().valueOf().toString();
-    var audioElement = document.createElement('audio');
-    audioElement.setAttribute("id", elementId);
-    document.body.appendChild(audioElement);
+    var audioElement = null;
+    window.addEventListener('DOMContentLoaded', function(){
+        audioElement = document.createElement('audio');
+        audioElement.setAttribute("id", elementId);
+        audioElement.setAttribute("muted","true");
+        document.body.appendChild(audioElement);
+     });
 
     var isSpeaking = false;
 
@@ -94,11 +98,11 @@ function ChattyKathy(settings) {
 
     // Get Audio
     function getAudio(message) {
-        if (settings.cacheSpeech === false || requestSpeechFromLocalCache(message) === null) {
+        //if (settings.cacheSpeech === false || requestSpeechFromLocalCache(message) === null) {
             return requestSpeechFromAWS(message);
-        } else {
-            return requestSpeechFromLocalCache(message);
-        }
+        // } else {
+        //     return requestSpeechFromLocalCache(message);
+        // }
     }
 
     // Make request to Amazon polly
@@ -114,7 +118,7 @@ function ChattyKathy(settings) {
                 if (error) {
                     errorCallback(error)
                 } else {
-                    saveSpeechToLocalCache(message, data.AudioStream);
+                    //saveSpeechToLocalCache(message, data.AudioStream);
                     successCallback(data.AudioStream);
                 }
             });
@@ -169,6 +173,12 @@ function ChattyKathy(settings) {
             var blob = new Blob([arrayBuffer]);
 
             var url = URL.createObjectURL(blob);
+            if(audioElement == null){
+                document.createElement('audio');
+                audioElement.setAttribute("id", elementId);
+                audioElement.setAttribute("muted","true");
+                document.body.appendChild(audioElement);
+            }
             audioElement.src = url;
             audioElement.addEventListener("ended", function () {
                 isSpeaking = false;
@@ -192,9 +202,9 @@ function ChattyKathy(settings) {
         if (typeof settings.pollyVoiceId === 'undefined') {
             settings.pollyVoiceId = "Amy";
         }
-        if (typeof settings.cacheSpeech === 'undefined') {
-            settings.cacheSpeech === true;
-        }
+        // if (typeof settings.cacheSpeech === 'undefined') {
+        //     settings.cacheSpeech === true;
+        // }
         return settings;
     }
 

@@ -233,7 +233,7 @@
         awsCredentials: awsCredentials,
         awsRegion: "us-west-2",
         pollyVoiceId: "Joanna",
-        cacheSpeech: true
+        cacheSpeech: false
     }
     var ava = ChattyKathy(settings);
 	
@@ -322,19 +322,27 @@
 				names +=", ";
 			}
 		}
-		
 		return names;
 	}
 
+	
+
+
+
+
+	//var appId = 29;
+	var appId = 6027;
+	//var btId = 3;
+	var btId = 1003961;
 	var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
 	var btsToInspect = null;
 	var topBTs = function(){
-		avaa_buildBTDashboard(29,3,timeRange,"topbts",function(results){
+		avaa_buildBTDashboard(appId,5,timeRange,"topbts",function(bts,results){
+			console.log(JSON.stringify(results));
 			btsToInspect = results;
 			impress().goto(2);
 			var script = [];
 			var text1 = "The following Business Transactions have been identified.\n "+getBTNames(results);
-			console.log(text1);
 			var showText1 = function(){
 				setTimeout(function(){
 
@@ -342,23 +350,81 @@
 			}
 			script.push(new UIStep(text1,showText1));
 			playScript(script,0,function(){
-				btDetails();
+				btDetails(bts[0]);
 			});
 		});
 	}
 
-	var btDetails = function(){
+	
+
+	var btDetails = function(bt){
 		impress().goto(3);
 		var script = [];
-		var text1 = "Let us inspect the "+splitName(btsToInspect[2][0])+" Business Transaction.";
-		console.log(text1);
+
+		var btName = "Location";
+		if (btsToInspect && btsToInspect.length > 1){
+			btName = btsToInspect[2][0];
+		}
+		var text1 = "Let us inspect your "+splitName(btName)+" Business Transaction score card.";
 		var analyze1 = function(){
 			drawTransScoreCard(timeRange,"649","btDetailsChart");
 		}
-		script.push(new UIStep(text1,analyze1));
+		script.push(new UIStep(text1,analyze1,"after"));
+
+		var text2 = "Let me analyze what is causing this";
+		var analyze2 = function(){
+			$("#btDetails").append("<div class=\"loader\">Analyzing...</div>");
+			analyzeSnapshots(appId,bt,5,script,displayErrorInfo,displaySlowInfo,displaySlowInfo);
+		}
+		script.push(new UIStep(text2,analyze2,"before"));
 		playScript(script,0,function(){
 			
 		});
+	}
+
+	var displayErrorInfo = function(script,bt,errorAnalysis){
+		if(errorAnalysis.length>0){
+			$("#btDetails").html();
+			var text1 = "Here are the exceptions we found and their counts";
+			var analyze1 = function(){
+				var btDiv = "btDetails";
+				var data = [];
+				errorAnalysis.forEach(function(err){
+					data.push([err.error,err.count]);
+				})
+
+				new Table({
+					targetId:btDiv,
+					title:"Top Errors",
+					data:data,
+					order: [[ 1, "desc" ]],
+					columns: [{ title: "Error" },{ title: "Counts" }],
+					options : {
+						"searching": false,
+						"paging": false,
+						"ordering": false,
+						"info": false
+					}
+				}).draw(function(row){
+					
+				});	
+			}
+			script.push(new UIStep(text1,analyze1,"after"));
+		}
+	}
+
+	var displaySlowInfo = function(script,bt,potentialIssues){
+		var issues = extractPotentialIssues(potentialIssues);
+		if(issues.length>0){
+			
+			var text1 = "Here is what is causing your slow response times";
+			var analyze1 = function(){
+				$("#btDetails").html();
+				var btDiv = "btDetails";
+				displayPotentialIssues(bt,btDiv,"Potential Issues",issues);
+			}
+			script.push(new UIStep(text1,analyze1,"after"));
+		}
 	}
 
 	var details2 = function(){
@@ -381,10 +447,10 @@
 	}
 
 	var script = function(){
-		setTimeout(welcome, 3000);
+		//setTimeout(welcome, 3000);
 		//setTimeout(showHowIntro, 3000);
-		//setTimeout(topBTs, 3000);
-
+		setTimeout(topBTs, 3000);
+		//setTimeout(btDetails,3000);
 	}
 
 	script();

@@ -86,7 +86,7 @@ app.get('/', function(req, res){
 }); 
 
 app.get('/views/index.html', function(req, res){ 
-    res.render('index.html'); 
+    res.render('index.html',{"awskey1":configManager.getConfig().awskey1,"awskey2":configManager.getConfig().awskey2}); 
 }); 
 
 app.get('/views/login.html', function(req, res){ 

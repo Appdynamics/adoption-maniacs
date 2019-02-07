@@ -25,7 +25,8 @@ var buildScoreCardTable = function(topX,scoreCardResults,divId){
 var avaa_buildBTDashboard = function(appId,topX,timeRange,divId,callback){
     analyzeBTs(appId,topX,timeRange,"TopBTsByErrors",function(bts,results){
         buildScoreCardTable(topX,results,divId);
-        callback(results);
+        callback(bts,results);
         //buildScoreCards(appId,timeRange,bts);
     });
 }
+

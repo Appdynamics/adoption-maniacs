@@ -222,7 +222,7 @@ buildPotentialIssuesQuery = function(snapshot) {
 var analyzeSnapshots = function(
   appid,
   bt,
-  topX,
+  topX,script,
   errorSnapshotsCallback,
   verySlowCallback,
   slowCallBack
@@ -245,7 +245,7 @@ var analyzeSnapshots = function(
           results,
           topX
         );
-        errorSnapshotsCallback(bt, errorResults);
+        errorSnapshotsCallback(script,bt, errorResults);
       }
       if (verySlowCallback) {
         var diagResults = btBreakOutAPI.extractSnapshotsWithDiagnostics(
@@ -257,7 +257,7 @@ var analyzeSnapshots = function(
           //just take 1 VERY_SLOW snapshot to get potential issues
           var query = buildPotentialIssuesQuery(diagResults[0]);
           searchControllerRestUI(query, function(issues) {
-            verySlowCallback(bt, issues);
+            verySlowCallback(script,bt, issues);
           });
           //if we get Very Slow then do not bother with Slow.
           return;
@@ -273,7 +273,7 @@ var analyzeSnapshots = function(
           //just take 1 SLOW snapshot to get potential issues
           var query = buildPotentialIssuesQuery(diagResults[0]);
           searchControllerRestUI(query, function(issues) {
-            slowCallBack(bt, issues);
+            slowCallBack(script,bt, issues);
           });
         }
       }
@@ -311,7 +311,7 @@ var listBTs = function(appid, timeRange, callback){
 }
 
 
-var analyzeBTs = function(appid, topX, timeRange, report ,callback) {
+var analyzeBTs = function(appid, topX, timeRange, report , callback) {
   var query =
     "bt/list/" + appid + "?time-range="+timeRange;
   searchControllerRestUI(query, function(results) {
