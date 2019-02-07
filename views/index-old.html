@@ -120,8 +120,8 @@
 		alert(JSON.stringify(row));
 	});
 
-	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
-    var settings = {
+	var awsCredentials = new AWS.Credentials('<%= awskey1 %>','<%= awskey2 %>');
+	var settings = {
         awsCredentials: awsCredentials,
         awsRegion: "us-west-2",
         pollyVoiceId: "Joanna",

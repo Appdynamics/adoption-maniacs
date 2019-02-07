@@ -8,11 +8,78 @@
     <link href="/vendor/impress/css/impress-demo.css" rel="stylesheet" />
 	<script type="text/javascript" src="/vendor/polly/aws-sdk.min.js"></script>
 	<script type="text/javascript" src="/vendor/polly/chattyKatty.js"></script>
+	<script type="text/javascript" src="/custom/js/apr-analysis.js"></script>
+	<script type="text/javascript" src="/custom/js/apr-charts.js"></script>
+	<script type="text/javascript" src="/custom/js/internalui.js"></script>
+	<script type="text/javascript" src="/custom/js/avaa.js"></script>
 		
 	<style>
 			body {
 				background-color: black;
 			}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: blue;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+
+
+
+
 	</style>	
 		
 </head>
@@ -21,46 +88,20 @@
 		<div id="impress" >
 
 				
-				<div class="step slide" data-x="-1000" data-y="-1500">
+				<div id="welcomeStep" class="step slide" data-x="-1000" data-y="-1500">
 					<div id="welcomeContent"></div>
 				</div>
 			
-				<div class="step slide" data-x="0" data-y="-1500">
+				<div id="showContentStep" class="step slide" data-x="0" data-y="-1500">
 					<div id="showContent"></div>
 				</div>
 			
-				<div class="step slide" data-x="1000" data-y="-1500">
-					<q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+				<div id="topBTs" class="step slide"  data-x="1000" data-y="-1500">
+					<div id="topbts"></div>
 				</div>
 			
-				<!--
-					
-					This is an example of step element being scaled.
-					
-					Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-					element will be 4 times larger than the others.
-					From presentation and transitions point of view it means, that it will have to be scaled
-					down (4 times) to make it back to its correct size.
-					
-				-->
-				<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-					<span class="try">then you should try</span>
-					<h1>impress.js<sup>*</sup></h1>
-					<span class="footnote"><sup>*</sup> no rhyme intended</span>
-				</div>
-			
-				<!--
-					
-					This element introduces rotation.
-					
-					Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-					element should be rotated by 90 degrees clockwise.
-					
-				-->
-				<div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-					<p>It’s a <strong>presentation tool</strong> <br/>
-					inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-					and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+				<div id="btDetails" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="2">
+					<div id="btDetailsChart"></div>	
 				</div>
 			
 				<div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
@@ -187,7 +228,7 @@
 
 	impress().init();
 
-	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
+	var awsCredentials = new AWS.Credentials('<%= awskey1 %>','<%= awskey2 %>');
     var settings = {
         awsCredentials: awsCredentials,
         awsRegion: "us-west-2",
@@ -235,69 +276,89 @@
 		var transition6 = function(){
 			setTimeout(showHowIntro, 1000 );
 		};
-		script = script.splice(0,2);
+		//script = script.splice(0,2);
 		script.push(new UIStep(text6,transition6,"after"));
 		
-		playScript(script,0);
+		playScript(script,0,function(){
+			hideElements(["welcomeStep"]);
+		});
 	}
 
 	var showHowIntro = function (){
 		impress().goto(1);
 		var script = [];
-		var text1 = "I will begin to analyze the follow Customer Controller for existing problems.";
+		var text1 = "I will begin to analyze your Controller for existing problems.";
 		var showText1 = function(){
-			$("#showContent").append("<q>Using ML algorithm to detect issues on Controller</q> <p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p>");
+			$("#showContent").append("<q>Analyzing</q><p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p><div class=\"loader\">Analyzing...</div>");
+			setTimeout(function(){
+				$("#showContent").html("<q>Top Issues Found :</q>");	
+			}, 3000 );
 		}
-		script.push(new UIStep(text1,showText1));
+		script.push(new UIStep(text1,showText1,"before"));
 
-		var text2 = "We have identified 3 issues that I will walk you through."
+		var text2 = "We will look at these issues now.";
 		var showText2 = function(){
-			$("#showContent").append("Top 3 Issues");
+			$("#showContent").append("<div class=\"loader\">Analyzing...</div>");
+			setTimeout(topBTs, 2000 );
 		}
-		script.push(new UIStep(text2,showText2));
-		playScript(script,0);
-	}
-
-	var top3 = function(){
-		hide();
-		//showElements(["details"]);
-		$("#details").addClass("lightSpeedIn");
-		var table_data = [
-			["Apple",1000],
-			["Amazon",2000],
-			["Cisco",3000],
-			["AppDynamics",4000],
-		]
-
-		new Table({
-			targetId:"details",
-			title:"Errors By Customers",
-			data:table_data,
-			columns: [{ title: "Customer" },{ title: "Counts" }],
-			options : {
-				"searching": false,
-				"paging": false,
-				"ordering": false
-			}
-		}).draw(function(row){
-			alert(JSON.stringify(row));
+		script.push(new UIStep(text2,showText2,"before"));
+		playScript(script,0,function(){
+			hideElements(["showContetStep"]);
 		});
-
-		setTimeout(details, 3000);
 	}
 
-	var details = function(){
-		new BoxChartComponent({
-			title:"Total Revenue",
-			targetId:"details",
-			action:"Revenue Dashboard",
-			actionClick: "window.location.href ='/views/examples/boxcomponent.html'",
-			icon:"fa fa-shopping-cart fa-5x",
-			value:"2 Million",
-			panelClass:"overview-item--c1",
-			options:{height:"400px", width:"400px"}
-		}).draw();
-		setTimeout(details2, 3000);
+	var splitName = function(name){
+		var n = name.split(".");
+		return n[n.length - 1];
+	}
+
+	var getBTNames = function(results){
+		var names = "";
+		for (let index = 0; index < results.length; index++) {
+			names += splitName(results[index][0]);
+			if(index == results.length - 2){
+				names += " and ";
+			}else{
+				names +=", ";
+			}
+		}
+		
+		return names;
+	}
+
+	var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
+	var btsToInspect = null;
+	var topBTs = function(){
+		avaa_buildBTDashboard(29,3,timeRange,"topbts",function(results){
+			btsToInspect = results;
+			impress().goto(2);
+			var script = [];
+			var text1 = "The following Business Transactions have been identified.\n "+getBTNames(results);
+			console.log(text1);
+			var showText1 = function(){
+				setTimeout(function(){
+
+				}, 2000 );
+			}
+			script.push(new UIStep(text1,showText1));
+			playScript(script,0,function(){
+				btDetails();
+			});
+		});
+	}
+
+	var btDetails = function(){
+		impress().goto(3);
+		var script = [];
+		var text1 = "Let us inspect the "+splitName(btsToInspect[2][0])+" Business Transaction.";
+		console.log(text1);
+		var analyze1 = function(){
+			drawTransScoreCard(timeRange,"649","btDetailsChart");
+		}
+		script.push(new UIStep(text1,analyze1));
+		playScript(script,0,function(){
+			
+		});
 	}
 
 	var details2 = function(){
@@ -320,13 +381,16 @@
 	}
 
 	var script = function(){
-		setTimeout(welcome, 1000);
+		setTimeout(welcome, 3000);
+		//setTimeout(showHowIntro, 3000);
+		//setTimeout(topBTs, 3000);
+
 	}
 
 	script();
 	
 
-	function playScript(script,i){
+	function playScript(script,i,callback){
 		if(script.length > i){
 			var uistep = script[i];
 			if(uistep.isBefore()){
@@ -341,10 +405,13 @@
 							uistep.run();
 						}
 					}
-					playScript(script,i+1);
+					playScript(script,i+1,callback);
 				});
 			}
-			
+		}else{
+			if(callback){
+				callback();
+			}
 		}
 	}
     

@@ -8,6 +8,8 @@
     <link href="/vendor/impress/css/impress-demo.css" rel="stylesheet" />
 	<script type="text/javascript" src="/vendor/polly/aws-sdk.min.js"></script>
 	<script type="text/javascript" src="/vendor/polly/chattyKatty.js"></script>
+	<script type="text/javascript" src="/custom/js/internalui.js"></script>
+	<script type="text/javascript" src="/custom/js/apr-analysis.js"></script>
 		
 	<style>
 			body {
@@ -43,10 +45,10 @@
 					down (4 times) to make it back to its correct size.
 					
 				-->
-				<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-					<span class="try">then you should try</span>
+				<div class="step" data-x="0" data-y="0" data-scale="4">
+					<<span class="try">then you should try</span>
 					<h1>impress.js<sup>*</sup></h1>
-					<span class="footnote"><sup>*</sup> no rhyme intended</span>
+					<span class="footnote"><sup>*</sup> no rhyme intended</span>>
 				</div>
 			
 				<!--
@@ -187,7 +189,7 @@
 
 	impress().init();
 
-	var awsCredentials = new AWS.Credentials("AKIAJ772YHSLMB44Q4KQ", "xekA896mk8Luo07HKeVgQB2tKxhffKxTlbZdb41T");
+	var awsCredentials = new AWS.Credentials('<%= awskey1 %>','<%= awskey2 %>');
     var settings = {
         awsCredentials: awsCredentials,
         awsRegion: "us-west-2",
@@ -259,31 +261,7 @@
 	}
 
 	var top3 = function(){
-		hide();
-		//showElements(["details"]);
-		$("#details").addClass("lightSpeedIn");
-		var table_data = [
-			["Apple",1000],
-			["Amazon",2000],
-			["Cisco",3000],
-			["AppDynamics",4000],
-		]
-
-		new Table({
-			targetId:"details",
-			title:"Errors By Customers",
-			data:table_data,
-			columns: [{ title: "Customer" },{ title: "Counts" }],
-			options : {
-				"searching": false,
-				"paging": false,
-				"ordering": false
-			}
-		}).draw(function(row){
-			alert(JSON.stringify(row));
-		});
-
-		setTimeout(details, 3000);
+		var timeRange = getTimeRangeBasedOnSelection("1d");
 	}
 
 	var details = function(){
@@ -320,7 +298,7 @@
 	}
 
 	var script = function(){
-		setTimeout(welcome, 1000);
+		setTimeout(welcome, 3000);
 	}
 
 	script();

@@ -837,6 +837,9 @@ exports.buildNewAppSession = function(controllerUrl,account,username,password){
 }
 
 exports.getAuthObject = function(authObj){
+	if(authObj == null){
+		return null;
+	}
 	var auth =  new AuthObject(authObj.controllerUrl,authObj.account,authObj.username,null);
 	auth.setCSRFToken(authObj.csrfToken);
 	auth.setCookieInfo(authObj.cookieInfo);

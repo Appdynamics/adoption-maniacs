@@ -106,7 +106,7 @@ if (configManager.getDashboards()){
             console.log("registring : "+path);
             app.get( path, function(req, res){ 
                 //console.log(".."+req.path);
-                res.render(".."+req.path); 
+                res.render(".."+req.path,{"awskey1":configManager.getConfig().awskey1,"awskey2":configManager.getConfig().awskey2}); 
             }); 
         });
     });
