@@ -103,6 +103,19 @@
 				<div id="btDetails" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="2">
 					<div id="btDetailsChart"></div>	
 				</div>
+
+				<div id="Recommendations-Error" class="step slide"  data-x="2000" data-y="-1500">
+					<h2 id="ErrorsandExceptions-WatchtheVideo">Watch the Video</h2><style type="text/css">.vidyard_player{width: 600px; }.vidyard_player > span{max-width: 600px !important; max-height: 360px!important;margin-left:0!important;}.innerContainer{position: relative; display: block; width: 100% !important; height: 0; }</style><script type="text/javascript" id="vidyard_embed_code_ELM5qxz3o5dX6bE81mPgMQ" src="//play.vidyard.com/ELM5qxz3o5dX6bE81mPgMQ.js?v=3.1.1&type=inline&second=0"></script>
+				</div>
+				<div id="Recommendations-Slow" class="step slide"  data-x="2000" data-y="-1500">
+					<h2 id="ErrorsandExceptions-WatchtheVideo">Watch the Video</h2><style type="text/css">.vidyard_player{width: 600px; }.vidyard_player > span{max-width: 600px !important; max-height: 360px!important;margin-left:0!important;}.innerContainer{position: relative; display: block; width: 100% !important; height: 0; }</style><script type="text/javascript" id="vidyard_embed_code_ELM5qxz3o5dX6bE81mPgMQ" src="//play.vidyard.com/ELM5qxz3o5dX6bE81mPgMQ.js?v=3.1.1&type=inline&second=0"></script>
+				</div>
+				<div id="closing" class="step slide"  data-x="2000" data-y="-1500">
+					
+					<video width="825" autoplay>
+						<source src="/img/Finale720p.mov" type="video/mp4"></source>
+					</video>
+				</div>
 			
 				<div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
 					<p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
@@ -244,80 +257,79 @@
 
 		var text1 = "Hello";
 		var showText1 = function(){
-			$("#welcomeContent").html("<q>Welcome</q>");
+			//$("#welcomeContent").html("<q>Hello</q>");
 		}
 		script.push(new UIStep(text1,showText1));
 
-		var text2 = "I’m Ayvaa, the AppDynamics Virtual Adoption Assistant.";
+		var text2 = "I’m Ayvaa. My job is to help customers identify and quickly resolve application performance issues.";
 		var showText2 = function(){
-			$("#welcomeContent").html("<q><strong>AVAA</strong></q> <q>AppDynamics Virtual Adoption Assistant</q>");
+			$("#welcomeContent").append("<q>AppDynamics Virtual Assistant aka <strong>AVA</strong></q>");
 		}
-		script.push(new UIStep(text2,showText2));
+		script.push(new UIStep(text2,showText2,"before"));
 
-		var text3 = "Chuck Robbins recently referred to our CEO, David Wadhwani, as “Mr. AVP”, underscoring that the AVP initiative is critical to AppDee’s goal of becoming a Billion Dollar business unit"
+		var text3 = "My first assignment is to increase the level of adoption of the AppDynamics Visibility Packs."
 		var showText3 = function(){
-			$("#welcomeContent").append("<q><strong>Mr. AVP</strong></q>");
+			//$("#welcomeContent").html("<q>The AppDynamics Visability Pack are seeded licenses that offer Cisco customers the opportunity to  discover the benefits of AppD application performance monitoring</q>");
+			$("#welcomeContent").html("<q>AVP - AppDynamics Visibility Packs</q>");
 		}
-		script.push(new UIStep(text3,showText3));
+		script.push(new UIStep(text3,showText3,"before"));
 
-		var text4 = "The AppDee Visibility Pack initiative is an effort to \“seed\” AppDee with 1500 new customers in the hope that some percentage of these customers will try, like and then renew and expand AppDee"
+		var text4 = "Chuck Robbins recently referred to David Wadhwani as ‚Mr. AVP, underscoring that the AVP initiative is critical to AppDee’s goal of becoming a Billion Dollar business unit. To-date though the AppDee Visibility Pack adoption rate has only been about 5%. Forgive me for saying so but you humans just don't scale well.  This is where I come in. Even with as little as a 10% increase, this could add $15,000,000 of potential annual revenue"
 		var showText4 = function(){
-			$("#welcomeContent").append("<q><strong>1500</strong></q>");
+			$("#welcomeContent").append("<q><ul>");
+			$("#welcomeContent").append("<li>Chuck Robbins called David \"Mr. AVP\"</li>");
+			$("#welcomeContent").append("<li>One Billion Dollar Business Unit</li>");
+			$("#welcomeContent").append("<li>5% Conversion Rate</li>");
+			//$("#welcomeContent").append("<li>Challenge: consultants only able to engage with small number of customers resulting in conversion rate of only 5%</li>");
+			$("#welcomeContent").append("<li>+10% ~= $15,000,000 Annual Revenue</li>");
+			$("#welcomeContent").append("</ul></q>");
 		}
-		script.push(new UIStep(text4,showText4));
+		script.push(new UIStep(text4,showText4,"before"));
 		
-		var text5 = "To-date our human-based adoption efforts have resulted in a very low AVP conversion rate of about 5%"
-		var showText5 = function(){
-			$("#welcomeContent").append("<q><strong>5%</strong></q>");
-		}
-		script.push(new UIStep(text5,showText5));
-
-		var text6 = "Let me show you how I am going to change this!";
-		var transition6 = function(){
+		var text5 = "I will identify, rank and analyze the most important issues that AppDee detects. Let me demonstrate by connecting to a live, running controller."
+		
+		var transition5 = function(){
 			setTimeout(showHowIntro, 1000 );
 		};
-		//script = script.splice(0,2);
-		script.push(new UIStep(text6,transition6,"after"));
+		script.push(new UIStep(text5,transition5,"after"));
 		
 		playScript(script,0,function(){
-			hideElements(["welcomeStep"]);
+			//hideElements(["welcomeStep"]);
 		});
 	}
 
 	var showHowIntro = function (){
 		impress().goto(1);
 		var script = [];
-		var text1 = "I will begin to analyze your Controller for existing problems.";
+		var text1 = "I will begin to analyze this Controller for existing issues.";
 		var showText1 = function(){
-			$("#showContent").append("<q>Analyzing</q><p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p><div class=\"loader\">Analyzing...</div>");
-			setTimeout(function(){
-				$("#showContent").html("<q>Top Issues Found :</q>");	
-			}, 3000 );
+			$("#showContent").append("<q><p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p></q><div class=\"loader\">Analyzing...</div>");
 		}
 		script.push(new UIStep(text1,showText1,"before"));
 
-		var text2 = "We will look at these issues now.";
-		var showText2 = function(){
-			$("#showContent").append("<div class=\"loader\">Analyzing...</div>");
-			setTimeout(topBTs, 2000 );
-		}
-		script.push(new UIStep(text2,showText2,"before"));
+		// var text2 = "We will look at these issues now.";
+		// var showText2 = function(){
+		// 	setTimeout(topBTs, 2000 );
+		// }
+		// script.push(new UIStep(text2,showText2,"before"));
 		playScript(script,0,function(){
-			hideElements(["showContetStep"]);
+			//hideElements(["showContetStep"]);
+			setTimeout(topBTs, 2000 );
 		});
 	}
-
+	
 	var splitName = function(name){
 		var n = name.split(".");
 		return n[n.length - 1];
 	}
-
+	
 	var getBTNames = function(results){
-		var names = "";
+		
+		var names = "BT ";
 		for (let index = 0; index < results.length; index++) {
 			names += splitName(results[index][0]);
 			if(index == results.length - 2){
-				names += " and ";
+				names += " and BT ";
 			}else{
 				names +=", ";
 			}
@@ -330,19 +342,20 @@
 
 
 
-	//var appId = 29;
-	var appId = 6027;
-	//var btId = 3;
-	var btId = 1003961;
+	var appId = 29;
+	//var appId = 6027;
+	var btId = 3;
+	//var btId = 1003961;
 	var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
 	var btsToInspect = null;
 	var topBTs = function(){
+		$("#showContent").html("<q><p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p>Analyzing...Completed!</q>");
 		avaa_buildBTDashboard(appId,5,timeRange,"topbts",function(bts,results){
 			console.log(JSON.stringify(results));
 			btsToInspect = results;
 			impress().goto(2);
 			var script = [];
-			var text1 = "The following Business Transactions have been identified.\n "+getBTNames(results);
+			var text1 = "My Recommendation Engine has identified the top 5 Business Transactions that could be optimized.\n ";
 			var showText1 = function(){
 				setTimeout(function(){
 
@@ -350,42 +363,46 @@
 			}
 			script.push(new UIStep(text1,showText1));
 			playScript(script,0,function(){
-				btDetails(bts[0]);
+				btDetails(bts[1]);
 			});
 		});
 	}
 
-	
-
 	var btDetails = function(bt){
-		impress().goto(3);
+	
 		var script = [];
 
-		var btName = "Location";
-		if (btsToInspect && btsToInspect.length > 1){
-			btName = btsToInspect[2][0];
-		}
-		var text1 = "Let us inspect your "+splitName(btName)+" Business Transaction score card.";
+		var btName = splitName(bt.name);
+		var text1 = "Let us inspect your "+btName+" Business Transaction score card next. ";
 		var analyze1 = function(){
-			drawTransScoreCard(timeRange,"649","btDetailsChart");
+			// setTimeout(function(){
+			// }, 2000 );
 		}
 		script.push(new UIStep(text1,analyze1,"after"));
+		drawTransScoreCard(timeRange,bt,"btDetailsChart");
+		impress().goto(3);
+		
+		var text21 = "The scorecard reports on this BeeTee's Key Performance Indicators";
+		var analyze21 = function(){
+			setTimeout(function(){}, 1000 );
+		}
+		script.push(new UIStep(text21,analyze21,"before"));
 
-		var text2 = "Let me analyze what is causing this";
+		var text2 = "Let me analyze what can be optimized";
 		var analyze2 = function(){
 			$("#btDetails").append("<div class=\"loader\">Analyzing...</div>");
 			analyzeSnapshots(appId,bt,5,script,displayErrorInfo,displaySlowInfo,displaySlowInfo);
 		}
 		script.push(new UIStep(text2,analyze2,"before"));
 		playScript(script,0,function(){
-			
+			recommendations();
 		});
 	}
 
 	var displayErrorInfo = function(script,bt,errorAnalysis){
 		if(errorAnalysis.length>0){
 			$("#btDetails").html();
-			var text1 = "Here are the exceptions we found and their counts";
+			var text1 = "Here are the exceptions I've found and their counts. These exceptions should be investigated.";
 			var analyze1 = function(){
 				var btDiv = "btDetails";
 				var data = [];
@@ -409,7 +426,7 @@
 					
 				});	
 			}
-			script.push(new UIStep(text1,analyze1,"after"));
+			script.push(new UIStep(text1,analyze1,"before"));
 		}
 	}
 
@@ -427,30 +444,40 @@
 		}
 	}
 
-	var details2 = function(){
-		var chartData =[
-			[1532966193039,5],
-			[1532966013039,10],
-			[1532965833039,20],
-			[1532965593039,7],
-			[1532965293039,30]
-		];
+	var recommendations = function(){
+		impress().goto(4);
+		var script = [];
+		var text1 = "Here is a video you can watch that will help you further analyze error transactions";
+		var analyze1 = function(){
+			setTimeout(function(){}, 1000 );
+		}
+		script.push(new UIStep(text1,analyze1,"after"));
+		playScript(script,0,function(){
+			closing();
+		});
+	}
 
-		new TimeChart({
-			targetId:"details",
-			data : chartData,
-			options:{height:"400px", width:"400px"}
-		}).draw(function(selection){
-			alert(JSON.stringify(selection));
-		})
-		//setTimeout(details3, 3000);
+	var closing = function(){
+		impress().goto(6);
+		var script = [];
+		//var text1 = "As a virtual assistant, I can work with thousands of customers as easily as one.  How many consultants would you have to hire to do that?  How much would that cost?  Don't panic, I've got AppDynamics' back.  Invest in my AI so that Chuck will start refferring to David as Mr. MVP instead of AVP";
+		var text1 = "As AppDynamics virtual assistant, I can drive adoption with thousands of customers. Let me help AppDee reach the billion dollar revenue milestone.";
+		var analyze1 = function(){
+			setTimeout(function(){}, 1000 );
+		}
+		script.push(new UIStep(text1,analyze1,"before"));
+		playScript(script,0,function(){
+			
+		});
 	}
 
 	var script = function(){
-		//setTimeout(welcome, 3000);
+		setTimeout(welcome, 3000);
 		//setTimeout(showHowIntro, 3000);
-		setTimeout(topBTs, 3000);
+		//setTimeout(topBTs, 5000);
 		//setTimeout(btDetails,3000);
+		//setTimeout(closing, 2000);
+		//setTimeout(recommendations, 2000);
 	}
 
 	script();

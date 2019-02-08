@@ -31,7 +31,7 @@ router.post('/', function(req, res) {
 				if(err){
 					res.status(500).send(err.body);
 				}else{
-					res.status(200).send(resp);
+					res.status(200).send(resp.body);
 				}
 			});
 		}

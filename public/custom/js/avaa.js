@@ -30,3 +30,29 @@ var avaa_buildBTDashboard = function(appId,topX,timeRange,divId,callback){
     });
 }
 
+var extractPotentialIssues = function(issues){
+    var results = [];
+    issues.forEach(function(issue){
+        results.push([issue.executionTimeMs,aprformatMessage(issue.message,100)]);
+    });
+    return results;
+}
+
+var displayPotentialIssues= function(bt,div,title,potentialIssues){
+    new Table({
+        targetId:div,
+        title:title,
+        data:potentialIssues,
+        order: [[ 0, "desc" ]],
+        columns: [{ title: "Time Spent (ms)" },{ title: "Potential Problems" }],
+        options : {
+            "searching": false,
+            "paging": false,
+            "ordering": true,
+            "info": false
+        }
+    }).draw(function(row){
+        
+    });	
+}
+

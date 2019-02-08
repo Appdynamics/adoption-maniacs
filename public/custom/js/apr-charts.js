@@ -187,13 +187,13 @@ class ReportV2SelectionComponent extends BaseComponent {
 
 var drawTransScoreCard = function(timeRange,bt,targetId) {
   var query =
-    "histogram/txScoreChartData/BUSINESS_TRANSACTION/" + bt.trim() +"?time-range="+timeRange+"&baseline=-1";
+    "histogram/txScoreChartData/BUSINESS_TRANSACTION/" + bt.id+"?time-range="+timeRange+"&baseline=-1";
   searchControllerRestUI(query, function(results) {
     var btBreakOutAPI = new BTBreakOutAPI();
     var columns = btBreakOutAPI.formatHistogramToColumnData(results);
     new ScoreCardComponent({
       targetId: targetId,
-      title: "Score Card",
+      title: bt.name+" Business Transaction Score Card",
       dataKey: "raw_columns",
       data: columns,
       options:{size:{width:"800"}}
