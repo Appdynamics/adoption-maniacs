@@ -3,135 +3,517 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Cube | Explore impress.js in 3D | by Henrik Ingo @henrikingo</title>
-    <meta name="description" content="Explore impress.js in 3D" />
-	<meta name="author" content="Henrik Ingo" />
-	<% include ./partials/theme %>
-	<link href="/vendor/impress/css/cube.css" rel="stylesheet" />
+    <title>VA</title>
+   <% include ./partials/theme %>
+    <link href="/vendor/impress/css/impress-demo.css" rel="stylesheet" />
 	<script type="text/javascript" src="/vendor/polly/aws-sdk.min.js"></script>
 	<script type="text/javascript" src="/vendor/polly/chattyKatty.js"></script>
+	<script type="text/javascript" src="/custom/js/apr-analysis.js"></script>
+	<script type="text/javascript" src="/custom/js/apr-charts.js"></script>
+	<script type="text/javascript" src="/custom/js/internalui.js"></script>
+	<script type="text/javascript" src="/custom/js/avaa.js"></script>
 		
 	<style>
-			body{
-				background-color: white;
+			body {
+				background-color: black;
 			}
-			.step {
-				background-color:white;
-			}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: blue;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+
+
+
+
 	</style>	
 		
 </head>
 
-<body class="impress-not-supported">
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+<body>
+		<div id="impress" >
 
-<div id="impress" data-transition-duration="1000">
+				
+				<div id="welcomeStep" class="step slide" data-x="-1000" data-y="-1500">
+					<div id="welcomeContent"></div>
+				</div>
+			
+				<div id="showContentStep" class="step slide" data-x="0" data-y="-1500">
+					<div id="showContent"></div>
+				</div>
+			
+				<div id="topBTs" class="step slide"  data-x="1000" data-y="-1500">
+					<div id="topbts"></div>
+				</div>
+			
+				<div id="btDetails" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="2">
+					<div id="btDetailsChart"></div>	
+				</div>
 
-    <div class="step" data-x="0" data-y="0" data-z="350"
-         data-goto-key-list="ArrowRight ArrowLeft o" data-goto-next-list="step-2 step-4 overview">
-        <div id="issue1"></div>
-    </div>
-
-    <div class="step" data-x="350" data-y="0" data-z="0" data-rotate-y="90"
-         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-4 step-3 step-6 step-1 overview">
-		 <div id="issue2"></div>
-    </div>
-
-    <div class="step" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90"
-         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-2 step-5 step-6 step-1 overview">
-		 <div id="issue3"></div>
-    </div>
-
-    <div class="step" data-x="0" data-y="-350" data-z="0" data-rotate-x="90" data-rotate-z="-90"
-         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-5 step-2 step-6 step-1 overview">
-		 <div id="issue4"></div>
-    </div>
-
-    <div class="step" data-x="-350" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180"
-         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-3 step-4 step-6 step-1 overview">
-        <p>Slide five</p>
-    </div>
-
-    <div class="step" data-x="0" data-y="0" data-z="-350" data-rotate-y="-180" data-rotate-z="-180"
-         data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o" data-goto-next-list="step-3 step-4 step-2 step-5 overview">
-        <p>Slide six</p>
-    </div>
-
-    <div id="overview" class="step" data-x="700" data-y="-100" data-z="1000" data-scale="1" style="pointer-events: none;">
-    </div>
-</div>
-
-<div id="impress-toolbar"></div>
-<div id="impress-help"></div>
-
+				<div id="Recommendations-Error" class="step slide"  data-x="2000" data-y="-1500">
+					<h2 id="ErrorsandExceptions-WatchtheVideo">Watch the Video</h2><style type="text/css">.vidyard_player{width: 600px; }.vidyard_player > span{max-width: 600px !important; max-height: 360px!important;margin-left:0!important;}.innerContainer{position: relative; display: block; width: 100% !important; height: 0; }</style><script type="text/javascript" id="vidyard_embed_code_ELM5qxz3o5dX6bE81mPgMQ" src="//play.vidyard.com/ELM5qxz3o5dX6bE81mPgMQ.js?v=3.1.1&type=inline&second=0"></script>
+				</div>
+				<div id="Recommendations-Slow" class="step slide"  data-x="2000" data-y="-1500">
+					<h2 id="ErrorsandExceptions-WatchtheVideo">Watch the Video</h2><style type="text/css">.vidyard_player{width: 600px; }.vidyard_player > span{max-width: 600px !important; max-height: 360px!important;margin-left:0!important;}.innerContainer{position: relative; display: block; width: 100% !important; height: 0; }</style><script type="text/javascript" id="vidyard_embed_code_ELM5qxz3o5dX6bE81mPgMQ" src="//play.vidyard.com/ELM5qxz3o5dX6bE81mPgMQ.js?v=3.1.1&type=inline&second=0"></script>
+				</div>
+				<div id="closing" class="step slide"  data-x="2000" data-y="-1500">
+					
+					<video width="825" autoplay>
+						<source src="/img/Finale720p.mov" type="video/mp4"></source>
+					</video>
+				</div>
+			
+				<div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+					<p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+				</div>
+			
+				<!--
+					
+					And now it gets really exciting! We move into third dimension!
+					
+					Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
+					`data-z`. In the example below we use `data-z="-3000"` meaning that element should be
+					positioned far away from us (by 3000px).
+					
+				-->
+				<div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+					<p>and <b>tiny</b> ideas</p>
+				</div>
+			
+				<!--
+					
+					This step here doesn't introduce anything new when it comes to data attributes, but you
+					should notice in the demo that some words of this text are being animated.
+					It's a very basic CSS transition that is applied to the elements when this step element is
+					reached.
+					
+					At the very beginning of the presentation all step elements are given the class of `future`.
+					It means that they haven't been visited yet.
+					
+					When the presentation moves to given step `future` is changed to `present` class name.
+					That's how animation on this step works - text moves when the step has `present` class.
+					
+					Finally when the step is left the `present` class is removed from the element and `past`
+					class is added.
+					
+					So basically every step element has one of three classes: `future`, `present` and `past`.
+					Only one current step has the `present` class.
+					
+					Note: data-x/y/z attributes, if not defined, by default will inherit the value of the 
+					previous step. So to get back to 0 on the z-axis, we must set it to 0.
+					See src/plugins/rel/README.md for more information.
+					
+				-->
+				<div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
+					<p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+				</div>
+			
+				<div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+					<p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+				</div>
+			
+				<div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+					<p>want to know more?</p>
+					<q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
+				</div>
+			
+				<div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+					<p>one more thing...</p>
+				</div>
+			
+				<!--
+					
+					And the last one shows full power and flexibility of impress.js.
+					
+					You can not only position element in 3D, but also rotate it around any axis.
+					So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
+					10 degrees (clockwise) around Y axis.
+					
+					You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
+					as `data-rotate` (these two are basically aliases).
+					
+				-->
+				<div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+					<p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+					<span class="footnote">* beat that, prezi ;)</span>
+				</div>
+			
+				<!--
+					
+					So to summarize of all the possible attributes used to position presentation steps, we have:
+					
+					* `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+						the canvas in pixels; their default value is 0;
+					* `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+						the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+						are exactly the same;
+					* `data-scale` - defines the scale of step element; default value is 1
+					
+					These values are used by impress.js in CSS transformation functions, so for more information consult
+					CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+					
+				-->
+				<div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+				</div>
+			
+		</div>
+			
+			
 </body>
+		
 <script type="text/javascript" src="/vendor/impress/js/impress.js"></script>
 <script type="text/javascript">
+
+	class UIStep {
+		constructor(text,func,action) {
+			this.text = text;
+			this.func = func;
+			if(action == null){
+				this.action = "after";
+			}else{
+				this.action = action;
+			}
+		}
+		isAfter(){
+			return this.action == "after";
+		}
+		isBefore(){
+			return this.action == "before";
+		}
+		run(){
+			this.func();
+		}
+	}
+
 	impress().init();
 
-	new BoxChartComponent({
-		title:"Total Revenue",
-		targetId:"issue1",
-		action:"Revenue Dashboard",
-		actionClick: "window.location.href ='/views/examples/boxcomponent.html'",
-		icon:"fa fa-shopping-cart fa-5x",
-		value:"2 Million",
-		panelClass:"overview-item--c1",
-		options:{height:"400px", width:"400px"}
-	}).draw();
-
-	var chartData =[
-		[1532966193039,5],
-		[1532966013039,10],
-		[1532965833039,20],
-		[1532965593039,7],
-		[1532965293039,30]
-	];
-
-	new TimeChart({
-		targetId:"issue2",
-		data : chartData,
-		options:{height:"400px", width:"400px"}
-	}).draw(function(selection){
-		alert(JSON.stringify(selection));
-	})
-
-	var table_data = [
-			["Apple",1000],
-			["Amazon",2000],
-			["Cisco",3000],
-			["AppDynamics",4000],
-		]
-
-	new Table({
-		targetId:"issue3",
-		title:"Errors By Customers",
-		data:table_data,
-		columns: [{ title: "Customer" },{ title: "Counts" }],
-		options : {
-			"searching": false,
-			"paging": false,
-			"ordering": false
-		}
-	}).draw(function(row){
-		alert(JSON.stringify(row));
-	});
-
 	var awsCredentials = new AWS.Credentials('<%= awskey1 %>','<%= awskey2 %>');
-	var settings = {
+    var settings = {
         awsCredentials: awsCredentials,
         awsRegion: "us-west-2",
         pollyVoiceId: "Joanna",
         cacheSpeech: false
     }
-    var kathy = ChattyKathy(settings);
+    var ava = ChattyKathy(settings);
+	
+	
+	var welcome = function(){
+		impress().goto(0);
+		var script = [];
+
+		// var text1 = "Hello";
+		// var showText1 = function(){
+		// 	//$("#welcomeContent").html("<q>Hello</q>");
+		// }
+		// script.push(new UIStep(text1,showText1));
+
+		var text2 = "Hello I’m Ayvaa. My job is to help customers identify and quickly resolve application performance issues.";
+		var showText2 = function(){
+			$("#welcomeContent").append("<q><strong>AVA</strong><>/q><q>AppDynamics Virtual Assistant aka <strong>AVA</strong></q>");
+		}
+		script.push(new UIStep(text2,showText2,"before"));
+
+		var text3 = "My first assignment is to increase the level of adoption of the AppDynamics Visibility Packs."
+		var showText3 = function(){
+			//$("#welcomeContent").html("<q>The AppDynamics Visability Pack are seeded licenses that offer Cisco customers the opportunity to  discover the benefits of AppD application performance monitoring</q>");
+			$("#welcomeContent").html("<q>AVP - AppDynamics Visibility Packs</q>");
+		}
+		//script.push(new UIStep(text3,showText3,"before"));
+
+		var text4 = "Chuck Robbins recently referred to David Wadhwani as ‚Mr. AVP, underscoring that the AVP initiative is critical to AppDee’s goal of becoming a Billion Dollar business unit. To-date though the AppDee Visibility Pack adoption rate has only been about 5%. Forgive me for saying so but you humans just don't scale well.  This is where I come in. Even with as little as a 10% increase, this could add $15,000,000 of potential annual revenue"
+		var showText4 = function(){
+			$("#welcomeContent").append("<q><ul>");
+			$("#welcomeContent").append("<li>Chuck Robbins called David \"Mr. AVP\"</li>");
+			$("#welcomeContent").append("<li>One Billion Dollar Business Unit</li>");
+			$("#welcomeContent").append("<li>5% Conversion Rate</li>");
+			//$("#welcomeContent").append("<li>Challenge: consultants only able to engage with small number of customers resulting in conversion rate of only 5%</li>");
+			$("#welcomeContent").append("<li>+10% ~= $15,000,000 Annual Revenue</li>");
+			$("#welcomeContent").append("</ul></q>");
+		}
+		//script.push(new UIStep(text4,showText4,"before"));
+		
+		var text5 = "I will identify, rank and analyze the most important issues that AppDee detects. Let me demonstrate by connecting to a live, running controller."
+		
+		var transition5 = function(){
+			//setTimeout(showHowIntro, 1000 );
+		};
+		//script.push(new UIStep(text5,transition5,"after"));
+		
+		playScript(script,0,function(){
+			//hideElements(["welcomeStep"]);
+		});
+	}
+
+	var showHowIntro = function (){
+		impress().goto(1);
+		var script = [];
+		var text1 = "I will begin to analyze this Controller for existing issues.";
+		var showText1 = function(){
+			$("#showContent").append("<q><p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p></q><div class=\"loader\">Analyzing...</div>");
+		}
+		script.push(new UIStep(text1,showText1,"before"));
+
+		// var text2 = "We will look at these issues now.";
+		// var showText2 = function(){
+		// 	setTimeout(topBTs, 2000 );
+		// }
+		// script.push(new UIStep(text2,showText2,"before"));
+		playScript(script,0,function(){
+			//hideElements(["showContetStep"]);
+			setTimeout(topBTs, 2000 );
+		});
+	}
+	
+	var splitName = function(name){
+		var n = name.split(".");
+		return n[n.length - 1];
+	}
+	
+	var getBTNames = function(results){
+		
+		var names = "BT ";
+		for (let index = 0; index < results.length; index++) {
+			names += splitName(results[index][0]);
+			if(index == results.length - 2){
+				names += " and BT ";
+			}else{
+				names +=", ";
+			}
+		}
+		return names;
+	}
+
+	
+
+
+
+
+	var appId = 29;
+	//var appId = 6027;
+	var btId = 3;
+	//var btId = 1003961;
+	var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
+	var btsToInspect = null;
+	var topBTs = function(){
+		$("#showContent").html("<q><p>http://44controllerevents-sm451businessiqlab-isk0czcw.srv.ravcloud.com:8090</p>Analyzing...Completed!</q>");
+		avaa_buildBTDashboard(appId,5,timeRange,"topbts",function(bts,results){
+			console.log(JSON.stringify(results));
+			btsToInspect = results;
+			impress().goto(2);
+			var script = [];
+			var text1 = "My Recommendation Engine has identified the top 5 Business Transactions that could be optimized.\n ";
+			var showText1 = function(){
+				setTimeout(function(){
+
+				}, 2000 );
+			}
+			script.push(new UIStep(text1,showText1));
+			playScript(script,0,function(){
+				btDetails(bts[1]);
+			});
+		});
+	}
+
+	var btDetails = function(bt){
+	
+		var script = [];
+
+		var btName = splitName(bt.name);
+		var text1 = "Let us inspect your "+btName+" Business Transaction score card next. ";
+		var analyze1 = function(){
+			// setTimeout(function(){
+			// }, 2000 );
+		}
+		script.push(new UIStep(text1,analyze1,"after"));
+		drawTransScoreCard(timeRange,bt,"btDetailsChart");
+		impress().goto(3);
+		
+		var text21 = "The scorecard reports on this BeeTee's Key Performance Indicators";
+		var analyze21 = function(){
+			setTimeout(function(){}, 1000 );
+		}
+		script.push(new UIStep(text21,analyze21,"before"));
+
+		var text2 = "Let me analyze what can be optimized";
+		var analyze2 = function(){
+			$("#btDetails").append("<div class=\"loader\">Analyzing...</div>");
+			analyzeSnapshots(appId,bt,5,script,displayErrorInfo,displaySlowInfo,displaySlowInfo);
+		}
+		script.push(new UIStep(text2,analyze2,"before"));
+		playScript(script,0,function(){
+			recommendations();
+		});
+	}
+
+	var displayErrorInfo = function(script,bt,errorAnalysis){
+		if(errorAnalysis.length>0){
+			$("#btDetails").html();
+			var text1 = "Here are the exceptions I've found and their counts. These exceptions should be investigated.";
+			var analyze1 = function(){
+				var btDiv = "btDetails";
+				var data = [];
+				errorAnalysis.forEach(function(err){
+					data.push([err.error,err.count]);
+				})
+
+				new Table({
+					targetId:btDiv,
+					title:"Top Errors",
+					data:data,
+					order: [[ 1, "desc" ]],
+					columns: [{ title: "Error" },{ title: "Counts" }],
+					options : {
+						"searching": false,
+						"paging": false,
+						"ordering": false,
+						"info": false
+					}
+				}).draw(function(row){
+					
+				});	
+			}
+			script.push(new UIStep(text1,analyze1,"before"));
+		}
+	}
+
+	var displaySlowInfo = function(script,bt,potentialIssues){
+		var issues = extractPotentialIssues(potentialIssues);
+		if(issues.length>0){
+			
+			var text1 = "Here is what is causing your slow response times";
+			var analyze1 = function(){
+				$("#btDetails").html();
+				var btDiv = "btDetails";
+				displayPotentialIssues(bt,btDiv,"Potential Issues",issues);
+			}
+			script.push(new UIStep(text1,analyze1,"after"));
+		}
+	}
+
+	var recommendations = function(){
+		impress().goto(4);
+		var script = [];
+		var text1 = "Here is a video you can watch that will help you further analyze error transactions";
+		var analyze1 = function(){
+			setTimeout(function(){}, 1000 );
+		}
+		script.push(new UIStep(text1,analyze1,"after"));
+		playScript(script,0,function(){
+			closing();
+		});
+	}
+
+	var closing = function(){
+		impress().goto(6);
+		var script = [];
+		//var text1 = "As a virtual assistant, I can work with thousands of customers as easily as one.  How many consultants would you have to hire to do that?  How much would that cost?  Don't panic, I've got AppDynamics' back.  Invest in my AI so that Chuck will start refferring to David as Mr. MVP instead of AVP";
+		var text1 = "As AppDynamics virtual assistant, I can drive adoption with thousands of customers. Let me help AppDee reach the billion dollar revenue milestone.";
+		var analyze1 = function(){
+			setTimeout(function(){}, 1000 );
+		}
+		script.push(new UIStep(text1,analyze1,"before"));
+		playScript(script,0,function(){
+			
+		});
+	}
+
+	var script = function(){
+		setTimeout(welcome, 3000);
+		//setTimeout(showHowIntro, 3000);
+		//setTimeout(topBTs, 5000);
+		//setTimeout(btDetails,3000);
+		//setTimeout(closing, 2000);
+		//setTimeout(recommendations, 2000);
+	}
+
+	script();
+	
+
+	function playScript(script,i,callback){
+		if(script.length > i){
+			var uistep = script[i];
+			if(uistep.isBefore()){
+				if (isFunction(uistep.func)){
+					uistep.run();
+				}
+			}
+			if(uistep.text){
+				ava.SpeakWithPromise(uistep.text).then(function(){
+					if(uistep.isAfter()){
+						if (isFunction(uistep.func)){
+							uistep.run();
+						}
+					}
+					playScript(script,i+1,callback);
+				});
+			}
+		}else{
+			if(callback){
+				callback();
+			}
+		}
+	}
     
-//    kathy.Speak("Hello world, my name is Naveen!");
+    //ava.Speak("<speak>Hello, I’m Ayvaa, the AppDynamics Virtual Adoption Assistant <emphasis level=\"strong\">I’m here to change that!</emphasis></speak>");
 //    kathy.Speak("I can be used for an amazing user experience!");
 
+	function isFunction(functionToCheck) {
+		return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+	}
 
 </script>
 </html>

@@ -15,8 +15,15 @@ var buildScoreCardTable = function(topX,scoreCardResults,divId){
             "searching": false,
             "paging": false,
             "ordering": true,
-            "info": false
+            "info": false,
+            columnDefs: [
+                {
+                    "targets": [ 6 ],
+                    "visible": false
+                }
+            ]
         }
+        
     }).draw(function(row){
         
     });	
@@ -54,5 +61,30 @@ var displayPotentialIssues= function(bt,div,title,potentialIssues){
     }).draw(function(row){
         
     });	
+}
+
+function playScript(script,i,callback){
+    if(script.length > i){
+        var uistep = script[i];
+        if(uistep.isBefore()){
+            if (isFunction(uistep.func)){
+                uistep.run();
+            }
+        }
+        if(uistep.text){
+            ava.SpeakWithPromise(uistep.text).then(function(){
+                if(uistep.isAfter()){
+                    if (isFunction(uistep.func)){
+                        uistep.run();
+                    }
+                }
+                playScript(script,i+1,callback);
+            });
+        }
+    }else{
+        if(callback){
+            callback();
+        }
+    }
 }
 

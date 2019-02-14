@@ -160,8 +160,8 @@ a:focus {
 
 .step {
     position: relative;
-    width: 1000px;
-    padding: 40px;
+    width: 1200px;
+    padding: 20px;
     margin: 20px auto;
 
     -webkit-box-sizing: border-box;
@@ -204,9 +204,9 @@ a:focus {
 .slide {
     display: block;
 
-    width: 900px;
+    width: 1200px;
     height: 800px;
-    padding: 40px 20px;
+    padding: 20px 20px;
 
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .3);

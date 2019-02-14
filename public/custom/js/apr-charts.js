@@ -281,6 +281,63 @@ var analyzeSnapshots = function(
   );
 };
 
+
+var analyzeSnapshotsResults = function(
+  appid,
+  bt,
+  topX,callbackResults
+) {
+  var query = "histogram/snapshotsHistogramData";
+  var request = {
+    firstInChain: true,
+    maxRows: 600,
+    applicationIds: [appid],
+    businessTransactionIds: [bt.id],
+    rangeSpecifier: { type: "BEFORE_NOW", durationInMinutes: 60 }
+  };
+  postControllerRestUI(
+    { query: query, options: JSON.stringify(request) },
+    function(results) {
+      var resultObj = {};
+      var btBreakOutAPI = new BTBreakOutAPI();
+     
+        var errorResults = btBreakOutAPI.analyzeErrorSnapshots(
+          bt,
+          results,
+          topX
+        );
+        if(errorResults){
+          resultObj.errors = errorResults;
+        }
+     
+        var diagResults = btBreakOutAPI.extractSnapshotsWithDiagnostics(
+          "VERY_SLOW",
+          results,
+          true
+        );
+        if (diagResults.length > 0) {
+          //just take 1 VERY_SLOW snapshot to get potential issues
+          var query = buildPotentialIssuesQuery(diagResults[0]);
+          searchControllerRestUI(query, function(issues) {
+            resultObj.verslow = issues;
+
+            var diagResults = btBreakOutAPI.extractSnapshotsWithDiagnostics(
+              "SLOW",
+              results,
+              true
+            );
+              //just take 1 SLOW snapshot to get potential issues
+              var query = buildPotentialIssuesQuery(diagResults[0]);
+              searchControllerRestUI(query, function(issues) {
+                resultObj.slow= issues;
+                callbackResults(resultObj);
+              });   
+          });
+        }
+    }
+  );
+};
+
 var zeroOut = function(value){
   if(value && value < 0){
     return 0;
