@@ -75,7 +75,8 @@ class ScoreCardChart extends TimeChart {
           tick: {
             format: "%m/%d %H:%M",
             fit: false
-          }
+          },
+          height: 50
         },
         y2: {
           show: true,
@@ -196,7 +197,7 @@ var drawTransScoreCard = function(timeRange,bt,targetId) {
       title: bt.name+" Business Transaction Score Card",
       dataKey: "raw_columns",
       data: columns,
-      options:{size:{width:"800"}}
+      options:{size:{width:"1100",height:"600"}}
     }).draw();
   });
 };
@@ -333,6 +334,8 @@ var analyzeSnapshotsResults = function(
                 callbackResults(resultObj);
               });   
           });
+        }else{
+          callbackResults(resultObj);
         }
     }
   );

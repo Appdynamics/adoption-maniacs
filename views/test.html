@@ -93,7 +93,8 @@
     line-height: 1.8;
 }
 #footer {
-    background: #0070FF;
+    background: black;
+		height:50px;
     line-height: 2;
     text-align: center;
     color: #042E64;
@@ -112,14 +113,42 @@
     align-items: center;
 }
 
-#intro-back img{
-	width:1000px;
-	height:500px;
+.intro-back img{
+	width:100%;
+	height:100%;
 }
 #ava{
 	font-size: 50px;
 	margin:50px;
 }
+
+.c3-axis-y text 
+{
+  font-size: 18px;
+}
+
+.c3-axis-y2 text 
+{
+  font-size: 18px;
+}
+
+.c3-axis-x text 
+{
+  font-size: 16px; 
+}
+
+.c3-axis-x {
+	padding-bottom:10px;
+}
+
+.c3-legend-item text {
+	font-size: 20px; 
+}
+
+tbody td {
+	font-size: 20px;
+}
+
 
 
 
@@ -134,7 +163,7 @@
 					<img src="/img/FixedIntroSlide.png"/>
 				</div>
 				<div id="intro" class="step slide" style="color: blue;background-color:black" data-x="2000" data-y="-1500">
-					<div id="intro-back">
+					<div class="intro-back">
 						<img src="/img/J5A.gif"/>
 					</div>
 				</div>
@@ -172,7 +201,7 @@
 				<div id="closing" class="step slide"  data-x="20000" data-y="-1500">
 				</div>
 				<div id="end" class="step slide" style="color: blue;background-color:black" data-x="22000" data-y="-1500">
-						<div id="intro-back">
+						<div class="intro-back">
 								<img src="/img/J5A.gif"/>
 							</div>
 				</div>
@@ -230,7 +259,7 @@
 
 		var text3 = "My first assignment is to increase the level of adoption of the AppDynamics Visibility Packs."
 		var showText3 = function(){
-			impress().next();
+			impress().goto(2);
 			//$("#welcomeContent").html("<q>The AppDynamics Visability Pack are seeded licenses that offer Cisco customers the opportunity to  discover the benefits of AppD application performance monitoring</q>");
 			setBanner("One Billion Dollars In Revenue","#319C8F","white");
 		}
@@ -251,7 +280,7 @@
 		var text5 = "I will identify, rank, and analyze the most important issues that AppDee detects. Let me demonstrate by connecting to a live, running controller."
 		
 		var transition5 = function(){
-			setTimeout(showHowIntro, 1000 );
+			setTimeout(showHowIntro, 750 );
 		};
 		script.push(new UIStep(text5,transition5,"after"));
 		
@@ -261,7 +290,7 @@
 	}
 
 	var showHowIntro = function (){
-		impress().next();
+		impress().goto(3);
 		setBanner("Analyzing a live controller!","orange","blue");
 		var script = [];
 		var text1 = "Please wait as I analyze the transactions and snapshots collected on this Controller.";
@@ -278,7 +307,7 @@
 		// script.push(new UIStep(text2,showText2,"before"));
 		playScript(script,0,function(){
 			//hideElements(["showContetStep"]);
-			setTimeout(topBTs, 2000 );
+			setTimeout(topBTs, 1500 );
 		});
 	}
 	
@@ -306,7 +335,7 @@
 	var btId = 3;
 	//var btId = 1003961;
 	//var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
-	var timeRange = "last_6_hour.BEFORE_NOW.-1.-1.3600";
+	var timeRange = "last_6_hour.BEFORE_NOW.-1.-1.360";
 	var btsToInspect = null;
 	var topBTs = function(){
 		
@@ -318,13 +347,13 @@
 			var text1 = "Based on my recommendations here are the top 5 Business Transactions that can be optimized.\n ";
 			var showText1 = function(){
 				setTimeout(function(){
-				}, 5000 );
+				}, 2500 );
 			}
 			script.push(new UIStep(text1,showText1));
 			playScript(script,0,function(){
 				setTimeout(function(){
 					btDetails(bts[1]);
-				}, 1000 );
+				}, 750 );
 				
 			});
 		});
@@ -338,14 +367,14 @@
 		var btName = bt.name.replace("."," ");
 		var text1 = "For my demonstration, I will select the "+btName+" Business Transaction. ";
 		var analyze1 = function(){
-			setTimeout(function(){}, 2000 );
+			setTimeout(function(){}, 1700 );
 		}
 		script.push(new UIStep(text1,analyze1,"after"));
 		drawTransScoreCard(timeRange,bt,"btDetailsChart");
 		
 		var text21 = "This scorecard report shows this BeeTee's Key Performance Indicators. Average Response times, error, and slow transactions.";
 		var analyze21 = function(){
-			setTimeout(function(){}, 4000 );
+			setTimeout(function(){}, 2500 );
 		}
 		script.push(new UIStep(text21,analyze21,"before"));
 
@@ -368,8 +397,8 @@
 					}
 				}
 				playScript(script,0,function(){
-					
-				});
+					recommendations();
+				},3000);
 				
 			});
 		});
@@ -386,7 +415,7 @@
 				var btDiv = "btDetailsErrors";
 				var data = [];
 				errorAnalysis.forEach(function(err){
-					data.push([err.error,err.count]);
+					data.push([err.error.substring(0,100)+" .. ",err.count]);
 				})
 
 				new Table({
@@ -399,11 +428,17 @@
 						"searching": false,
 						"paging": false,
 						"ordering": false,
-						"info": false
-					}
+						"info": false,
+						columnDefs: [
+                {
+                    "targets": [ 0 ],
+                    "width": "200"
+                }
+            ]
+					},
+					class:"table table-borderless table-striped table-earning"
 				}).draw(function(row){
 				});	
-				setTimeout(function(){}, 5000 );
 			}
 			script.push(new UIStep(text1,analyze1,"before"));
 		}
@@ -412,15 +447,12 @@
 	var displaySlowInfo = function(script,bt,potentialIssues){
 		var issues = extractPotentialIssues(potentialIssues);
 		if(issues.length>0){
-			var text1 = "Here is what is causing your slow response times";
+			var text1 = "Here is what is causing your slow response times for this Business Transaction";
 			var analyze1 = function(){
 				impress().goto(7);
 				$("#btDetailsSlow").html();
 				var btDiv = "btDetailsSlow";
-				displayPotentialIssues(bt,btDiv,"Potential Issues",issues);
-				setTimeout(function(){
-					recommendations();
-				}, 3000 );
+				displayPotentialIssues(bt,btDiv,"Slow Response Times",issues);
 			}			
 			script.push(new UIStep(text1,analyze1,"after"));
 		}
@@ -460,7 +492,7 @@
 		var text1 = "As AppDynamics virtual assistant, I can drive adoption with thousands of customers. Let me help you reach the billion dollar milestone that AppDynamics has committed too.";
 		var analyze1 = function(){
 			$("#closing").html("<video autoplay><source src=\"/img/Fjinale-720p.mov\" type=\"video/mp4\"></source></video>");
-			setTimeout(function(){}, 3000 );
+			setTimeout(function(){}, 2000 );
 		}
 		script.push(new UIStep(text1,analyze1,"before"));
 		playScript(script,0,function(){
@@ -486,31 +518,22 @@
 	
 	
 	var setBanner = function(text,background,color){
-		$("#footer").html(text);
-		$("#footer").css("color", color);
-		$("#footer").css("background", background);
+		// $("#footer").html(text);
+		// $("#footer").css("color", color);
+		// $("#footer").css("background", background);
 	}
 
 	$('#footer').on('click', function(e){
-		//topBTs();
-		//welcome();
 		welcome();
-		//closing();
 	});
 
-	var team = function(){
-		setTimeout(impress().goto(0), 5000);
-		setBanner("Meet AVA","#82C6E2","white");
-	}
+	// var team = function(){
+	// 	impress().goto(0);
+	// 	setBanner("Meet AVA","#82C6E2","white");
+	// }
 
 	var script = function(){
-		setTimeout(team, 5000);
-		//setTimeout(showHowIntro, 3000);
-		//impress().goto(0);
-		//setTimeout(topBTs, 5000);
-		//setTimeout(btDetails,3000);
-		//setTimeout(closing, 2000);
-		//setTimeout(recommendations, 2000);
+		impress().goto(0);
 	}
 
 	script();

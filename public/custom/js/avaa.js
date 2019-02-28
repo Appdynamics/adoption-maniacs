@@ -22,10 +22,11 @@ var buildScoreCardTable = function(topX,scoreCardResults,divId){
                     "visible": false
                 }
             ]
-        }
+        },
+        class:"table table-borderless table-striped table-earning"
         
     }).draw(function(row){
-        
+        alert(JSON.stringify(row));
     });	
 }
 
@@ -56,14 +57,16 @@ var displayPotentialIssues= function(bt,div,title,potentialIssues){
             "searching": false,
             "paging": false,
             "ordering": true,
-            "info": false
-        }
+            "info": false,
+            
+        },
+        class:"table table-borderless table-striped table-earning"
     }).draw(function(row){
         
     });	
 }
 
-function playScript(script,i,callback){
+function playScript(script,i,callback,wait){
     if(script.length > i){
         var uistep = script[i];
         if(uistep.isBefore()){
@@ -78,7 +81,13 @@ function playScript(script,i,callback){
                         uistep.run();
                     }
                 }
-                playScript(script,i+1,callback);
+                if(wait){
+                    setTimeout(function(){
+						playScript(script,i+1,callback,wait);
+					}, wait );
+                }else{
+                    playScript(script,i+1,callback);
+                }
             });
         }
     }else{
