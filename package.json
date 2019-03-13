@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
+    "aws-sdk": "^2.420.0",
     "body-parser": "~1.8.1",
     "chai": "^3.0.0",
     "cookie-parser": "^1.4.3",

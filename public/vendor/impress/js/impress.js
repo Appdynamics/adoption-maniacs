@@ -2830,36 +2830,36 @@
     var hide = function() {
 
         // Mouse is now inactive
-        document.body.classList.add( "impress-mouse-timeout" );
+        //document.body.classList.add( "impress-mouse-timeout" );
     };
 
     var show = function() {
-        if ( timeoutHandle ) {
-            window.clearTimeout( timeoutHandle );
-        }
+        // if ( timeoutHandle ) {
+        //     window.clearTimeout( timeoutHandle );
+        // }
 
-        // Mouse is now active
-        document.body.classList.remove( "impress-mouse-timeout" );
+        // // Mouse is now active
+        // document.body.classList.remove( "impress-mouse-timeout" );
 
-        // Then set new timeout after which it is considered inactive again
-        timeoutHandle = window.setTimeout( hide, timeout * 1000 );
+        // // Then set new timeout after which it is considered inactive again
+        // timeoutHandle = window.setTimeout( hide, timeout * 1000 );
     };
 
     document.addEventListener( "impress:init", function( event ) {
-        var api = event.detail.api;
-        var gc = api.lib.gc;
-        gc.addEventListener( document, "mousemove", show );
-        gc.addEventListener( document, "click", show );
-        gc.addEventListener( document, "touch", show );
+        // var api = event.detail.api;
+        // var gc = api.lib.gc;
+        // gc.addEventListener( document, "mousemove", show );
+        // gc.addEventListener( document, "click", show );
+        // gc.addEventListener( document, "touch", show );
 
-        // Set first timeout
-        show();
+        // // Set first timeout
+        // show();
 
-        // Unset all this on teardown
-        gc.pushCallback( function() {
-            window.clearTimeout( timeoutHandle );
-            document.body.classList.remove( "impress-mouse-timeout" );
-        } );
+        // // Unset all this on teardown
+        // gc.pushCallback( function() {
+        //     window.clearTimeout( timeoutHandle );
+        //     document.body.classList.remove( "impress-mouse-timeout" );
+        // } );
     }, false );
 
 } )( document, window );

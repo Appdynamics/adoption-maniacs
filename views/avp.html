@@ -1,0 +1,332 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>AppDynamics Visibility Packs</title>
+   <% include includes %>
+</head>
+
+<body>
+		<div id="ava"><h7>AVA</h7></div>
+		<div id="impress">
+				<div id="intro" class="step slide" style="color: blue;background-color:black" data-x="2000" data-y="-1500">
+					<div class="intro-back">
+						<img src="/img/J5A.gif"/>
+					</div>
+				</div>
+				
+				<div id="context" class="step slide" data-x="4000" data-y="-1500">
+						<img src="/img/ChuckDavidSlide.png"/>
+				</div>
+			
+				<div id="showContentStep" class="step slide" data-x="6000" data-y="-1500">
+					<div id="showContent"></div>
+				</div>
+			
+				<div id="topBTs" class="step slide"  data-x="8000" data-y="-1500">
+					<div id="topbts"></div>
+				</div>
+			
+				<div id="btDetails" class="step slide" data-x="10000" data-y="-1500">
+					<div id="btDetailsChart"></div>	
+				</div>
+
+				<div id="btDetailsErrors" class="step slide" data-x="12000" data-y="-1500">
+					<div id="btDetailsErrors"></div>	
+				</div>
+
+				<div id="btDetailsSlow" class="step slide" data-x="14000" data-y="-1500">
+					<div id="btDetailsSlow"></div>	
+				</div>
+				
+				<div id="Recommendations" class="step slide"  data-x="16000" data-y="-1500">
+						<img src="/img/Troubleshooting.png"/>
+				</div>
+				<div id="enddemo" class="step slide" data-x="18000" data-y="-1500">
+					<img src="/img/controller.png"/>
+				</div>
+				<div id="closing" class="step slide"  data-x="20000" data-y="-1500">
+				</div>
+				<div id="end" class="step slide" style="color: blue;background-color:black" data-x="22000" data-y="-1500">
+						<div class="intro-back">
+								<img src="/img/J5A.gif"/>
+							</div>
+				</div>
+				<div id="schedule" class="step slide" data-x="0" data-y="-1500">
+						<iframe src="/views/contact.html" width="100%" height="100%" scrolling="no"></iframe>
+				</div>
+		</div>
+		<div id="footer">
+		</div>
+</body>
+		
+<script type="text/javascript" src="/vendor/impress/js/impress.js"></script>
+<script type="text/javascript">
+
+	impress().init();
+
+	var helloStep = new UIStep("Hello");
+
+	var welcome = function(){
+		setBanner("AVA - AppDynamics Virtual Assistant","black","white");
+		impress().goto(1);
+		addScript(helloStep);
+		playScripts();
+	}
+
+	var showHowIntro = function (){
+		impress().goto(3);
+		setBanner("Analyzing a live controller!","orange","blue");
+		var script = [];
+		var text1 = "Please wait as I analyze the transactions and snapshots collected on this Controller.";
+		var showText1 = function(){
+			$("#showContent").html("<img src='/img/controller.png'></img>");
+			$("#showContent").append("<q>  </q><div class=\"loader\">Analyzing...</div>");
+		}
+		script.push(new UIStep(text1,showText1,"before"));
+
+		// var text2 = "We will look at these issues now.";
+		// var showText2 = function(){
+		// 	setTimeout(topBTs, 2000 );
+		// }
+		// script.push(new UIStep(text2,showText2,"before"));
+		playScript(script,0,function(){
+			//hideElements(["showContetStep"]);
+			setTimeout(topBTs, 1500 );
+		});
+	}
+	
+	var splitName = function(name){
+		var n = name.split(".");
+		return n[n.length - 1];
+	}
+	
+	var getBTNames = function(results){
+		
+		var names = "BT ";
+		for (let index = 0; index < results.length; index++) {
+			names += splitName(results[index][0]);
+			if(index == results.length - 2){
+				names += " and BT ";
+			}else{
+				names +=", ";
+			}
+		}
+		return names;
+	}
+
+	var appId = 29;
+	//var appId = 6027;
+	var btId = 3;
+	//var btId = 1003961;
+	//var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
+	var timeRange = "last_6_hour.BEFORE_NOW.-1.-1.360";
+	var btsToInspect = null;
+	var topBTs = function(){
+		
+		avaa_buildBTDashboard(appId,5,timeRange,"topbts",function(bts,results){
+			$("#showContent").html("<img src='/img/controller.png'></img>");
+			btsToInspect = results;
+			impress().goto(4);
+			var script = [];
+			var text1 = "Based on my recommendations here are the top 5 Business Transactions that can be optimized.\n ";
+			var showText1 = function(){
+				setTimeout(function(){
+				}, 2500 );
+			}
+			script.push(new UIStep(text1,showText1));
+			playScript(script,0,function(){
+				setTimeout(function(){
+					btDetails(bts[1]);
+				}, 750 );
+				
+			});
+		});
+	}
+
+	var btDetails = function(bt){
+	
+		var script = [];
+		impress().goto(5);
+
+		var btName = bt.name.replace("."," ");
+		var text1 = "For my demonstration, I will select the "+btName+" Business Transaction. ";
+		var analyze1 = function(){
+			setTimeout(function(){}, 1700 );
+		}
+		script.push(new UIStep(text1,analyze1,"after"));
+		drawTransScoreCard(timeRange,bt,"btDetailsChart");
+		
+		var text21 = "This scorecard report shows this BeeTee's Key Performance Indicators. Average Response times, error, and slow transactions.";
+		var analyze21 = function(){
+			setTimeout(function(){}, 2500 );
+		}
+		script.push(new UIStep(text21,analyze21,"before"));
+
+		var text2 = "Let us take a deeper look";
+		var analyze2 = function(){
+			$("#btDetails").append("<div class=\"loader\">Analyzing...</div>");
+		}
+		script.push(new UIStep(text2,analyze2,"before"));
+		playScript(script,0,function(){
+			analyzeSnapshotsResults(appId,bt,5,function(results){
+				script = [];
+				if(results.errors){
+					displayErrorInfo(script,bt,results.errors);
+				}
+				if(results.veryslow){
+					displaySlowInfo(script,bt,results.verslow);
+				}else{
+					if(results.slow){
+						displaySlowInfo(script,bt,results.slow);
+					}
+				}
+				playScript(script,0,function(){
+					recommendations();
+				},3000);
+				
+			});
+		});
+		
+		
+	}
+
+	var displayErrorInfo = function(script,bt,errorAnalysis){
+		if(errorAnalysis.length>0){
+			$("#btDetailsErrors").html();
+			var text1 = "Here are the exceptions I've found and their counts.";
+			var analyze1 = function(){
+				impress().goto(6);
+				var btDiv = "btDetailsErrors";
+				var data = [];
+				errorAnalysis.forEach(function(err){
+					data.push([err.error.substring(0,100)+" .. ",err.count]);
+				})
+
+				new Table({
+					targetId:btDiv,
+					title:"Top Errors",
+					data:data,
+					order: [[ 1, "desc" ]],
+					columns: [{ title: "Error" },{ title: "Counts" }],
+					options : {
+						"searching": false,
+						"paging": false,
+						"ordering": false,
+						"info": false,
+						columnDefs: [
+                {
+                    "targets": [ 0 ],
+                    "width": "200"
+                }
+            ]
+					},
+					class:"table table-borderless table-striped table-earning"
+				}).draw(function(row){
+				});	
+			}
+			script.push(new UIStep(text1,analyze1,"before"));
+		}
+	}
+
+	var displaySlowInfo = function(script,bt,potentialIssues){
+		var issues = extractPotentialIssues(potentialIssues);
+		if(issues.length>0){
+			var text1 = "Here is what is causing your slow response times for this Business Transaction";
+			var analyze1 = function(){
+				impress().goto(7);
+				$("#btDetailsSlow").html();
+				var btDiv = "btDetailsSlow";
+				displayPotentialIssues(bt,btDiv,"Slow Response Times",issues);
+			}			
+			script.push(new UIStep(text1,analyze1,"after"));
+		}
+	}
+
+	var recommendations = function(){
+		impress().goto(8);
+		var script = [];
+		var text1 = "Here are some recommendations on how to optimize exceptions and further investigate slow response times";
+		var analyze1 = function(){
+		}
+		script.push(new UIStep(text1,analyze1,"after"));
+		playScript(script,0,function(){
+			setTimeout(function(){
+				endanalysis();
+			}, 2000 );
+		});
+	}
+
+	var endanalysis = function(){
+		impress().goto(9);
+		var script = [];
+		var text1 = "This ends my analysis of this business transaction running on the controller.";
+		var analyze1 = function(){
+			setTimeout(function(){}, 2000 );
+		}
+		script.push(new UIStep(text1,analyze1,"after"));
+		playScript(script,0,function(){
+			closing();
+		});
+	}
+	var closing = function(){
+		setBanner("Scale to 1000's customers","#82C6E2","white");
+		impress().goto(10);
+		var script = [];
+		//var text1 = "As a virtual assistant, I can work with thousands of customers as easily as one.  How many consultants would you have to hire to do that?  How much would that cost?  Don't panic, I've got AppDynamics' back.  Invest in my AI so that Chuck will start refferring to David as Mr. MVP instead of AVP";
+		var text1 = "As AppDynamics virtual assistant, I can drive adoption with thousands of customers. Let me help you reach the billion dollar milestone that AppDynamics has committed too.";
+		var analyze1 = function(){
+			$("#closing").html("<video autoplay><source src=\"/img/Fjinale-720p.mov\" type=\"video/mp4\"></source></video>");
+			setTimeout(function(){}, 2000 );
+		}
+		script.push(new UIStep(text1,analyze1,"before"));
+		playScript(script,0,function(){
+			setTimeout(function(){
+				close();
+			}, 1000 );
+		});
+	}
+
+	var close = function(){
+		impress().goto(11);
+		setBanner("Meet AVA","#82C6E2","white");
+		var script = [];
+		var text2 = "I'm AVA, the virtual assistant for ,ALL, AppDynamics customers.";
+		var analyze2 = function(){
+		}
+		script.push(new UIStep(text2,analyze2,"before"));
+		playScript(script,0,function(){
+			
+		});
+	}
+
+	
+	
+	var setBanner = function(text,background,color){
+		// $("#footer").html(text);
+		// $("#footer").css("color", color);
+		// $("#footer").css("background", background);
+	}
+
+	$('#footer').on('click', function(e){
+		welcome();
+	});
+
+	// var team = function(){
+	// 	impress().goto(0);
+	// 	setBanner("Meet AVA","#82C6E2","white");
+	// }
+
+	var script = function(){
+		impress().goto(0);
+	}
+
+	script();
+
+	function isFunction(functionToCheck) {
+		return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+	}
+
+</script>
+</html>

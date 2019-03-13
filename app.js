@@ -20,6 +20,9 @@ var log = log4js.getLogger("app");
 
 var app = express();
 
+var avaManager = require("./src/AvaManager.js");
+avaManager.buildSoundFiles();
+
 app.use(session({
     name: 'biqapp-apr-report',
     secret: 'CDD5342FE3926F900605227AC25E96B13A3375EB0BD4B4FE2EC3A5C45255814D',
@@ -85,10 +88,6 @@ app.get('/', function(req, res){
     res.redirect('/views/index.html');
 }); 
 
-app.get('/views/index.html', function(req, res){ 
-    res.render('index.html',{"awskey1":configManager.getConfig().awskey1,"awskey2":configManager.getConfig().awskey2}); 
-}); 
-
 app.get('/views/login.html', function(req, res){ 
     res.render('login.html'); 
 }); 
@@ -105,8 +104,7 @@ if (configManager.getDashboards()){
             var path = "/views"+viewUrl;
             console.log("registring : "+path);
             app.get( path, function(req, res){ 
-                //console.log(".."+req.path);
-                res.render(".."+req.path,{"awskey1":configManager.getConfig().awskey1,"awskey2":configManager.getConfig().awskey2}); 
+                res.render(".."+req.path); 
             }); 
         });
     });
