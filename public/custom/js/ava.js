@@ -114,13 +114,8 @@ class UIStep {
     }
 }
 
-var avaScript = [];
-function addScript(uiScript){
-    avaScript.push(uiScript);
-}
-
-function playScripts(callback,wait){
-    playScript(avaScript,0,callback,wait);
+function playScripts(scripts,callback,wait){
+    playScript(scripts,0,callback,wait);
 }
 
 function playScript(script,i,callback,wait){

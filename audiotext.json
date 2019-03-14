@@ -3,6 +3,10 @@
 		{ 
 		  "id":"Hello",
 		  "text":"Hello I’m Ayvaa. I am a virtual assistant built using AI, expertly trained in Application Performance Monitoring. My job is to assist customers in identifying problems in their environment."
+		},
+		{ 
+		  "id":"intro",
+		  "text":"Let us watch a two minute video that shows you what you can do with your SaaS controller."
 		}
 	]
 }

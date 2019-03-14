@@ -8,52 +8,28 @@
 </head>
 
 <body>
-		<div id="ava"><h7>AVA</h7></div>
+		<div id="ava">
+			<h7>AppDynamics Visibility Packs</h7>
+		</div>
 		<div id="impress">
-				<div id="intro" class="step slide" style="color: blue;background-color:black" data-x="2000" data-y="-1500">
-					<div class="intro-back">
-						<img src="/img/J5A.gif"/>
-					</div>
+				<div id="welcome" class="step slide" data-x="0" data-y="-1500">
+						<p>
+						<ul>
+							<li>Situation : You have been identified as the owner of your AppDynamics SaaS Instance. Please contact us and we can provide credentials to your instance.</li>
+							<li>Complication : Your SaaS Instance is live but no agents have been deployed.</li>
+							<li>Implication : You can use AppDynamics to identify and troubleshoot complex APM issues. This platform is available but not being used.</li>
+							<li>Position : When you deploy the agents you will get visibility into your applications.</li>
+							<li>Action : Please schedule an appointment with our our Adoption team. We will work with you to identify the right use case and team to work with. Please share this with anyone that might be interested in using these licenses.</li>
+							<li>Benefit : AppDynamics is a powerful APM platform that can give you end to end visibility. </li>
+						</ul>
+						</p>
+						<a id="introNext">Next</a>
 				</div>
 				
-				<div id="context" class="step slide" data-x="4000" data-y="-1500">
-						<img src="/img/ChuckDavidSlide.png"/>
+				<div id="intro" class="step slide" data-x="2000" data-y="-1500">
+						<div id="showIntroVideo"></div>
 				</div>
-			
-				<div id="showContentStep" class="step slide" data-x="6000" data-y="-1500">
-					<div id="showContent"></div>
-				</div>
-			
-				<div id="topBTs" class="step slide"  data-x="8000" data-y="-1500">
-					<div id="topbts"></div>
-				</div>
-			
-				<div id="btDetails" class="step slide" data-x="10000" data-y="-1500">
-					<div id="btDetailsChart"></div>	
-				</div>
-
-				<div id="btDetailsErrors" class="step slide" data-x="12000" data-y="-1500">
-					<div id="btDetailsErrors"></div>	
-				</div>
-
-				<div id="btDetailsSlow" class="step slide" data-x="14000" data-y="-1500">
-					<div id="btDetailsSlow"></div>	
-				</div>
-				
-				<div id="Recommendations" class="step slide"  data-x="16000" data-y="-1500">
-						<img src="/img/Troubleshooting.png"/>
-				</div>
-				<div id="enddemo" class="step slide" data-x="18000" data-y="-1500">
-					<img src="/img/controller.png"/>
-				</div>
-				<div id="closing" class="step slide"  data-x="20000" data-y="-1500">
-				</div>
-				<div id="end" class="step slide" style="color: blue;background-color:black" data-x="22000" data-y="-1500">
-						<div class="intro-back">
-								<img src="/img/J5A.gif"/>
-							</div>
-				</div>
-				<div id="schedule" class="step slide" data-x="0" data-y="-1500">
+				<div id="schedule" class="step slide" data-x="4000" data-y="-1500">
 						<iframe src="/views/contact.html" width="100%" height="100%" scrolling="no"></iframe>
 				</div>
 		</div>
@@ -66,35 +42,25 @@
 
 	impress().init();
 
+	$('#introNext').on('click', function(e){
+		intro();
+	});
+
 	var helloStep = new UIStep("Hello");
 
 	var welcome = function(){
-		setBanner("AVA - AppDynamics Virtual Assistant","black","white");
-		impress().goto(1);
-		addScript(helloStep);
-		playScripts();
+		impress().goto(0);
+		playScripts([helloStep]);
 	}
 
-	var showHowIntro = function (){
-		impress().goto(3);
-		setBanner("Analyzing a live controller!","orange","blue");
-		var script = [];
-		var text1 = "Please wait as I analyze the transactions and snapshots collected on this Controller.";
-		var showText1 = function(){
-			$("#showContent").html("<img src='/img/controller.png'></img>");
-			$("#showContent").append("<q>  </q><div class=\"loader\">Analyzing...</div>");
-		}
-		script.push(new UIStep(text1,showText1,"before"));
+	var introStep = new UIStep("intro","after");
 
-		// var text2 = "We will look at these issues now.";
-		// var showText2 = function(){
-		// 	setTimeout(topBTs, 2000 );
-		// }
-		// script.push(new UIStep(text2,showText2,"before"));
-		playScript(script,0,function(){
-			//hideElements(["showContetStep"]);
-			setTimeout(topBTs, 1500 );
-		});
+	var intro = function (){
+		impress().goto(1);
+		var showIntroMovie = function(){
+			$("#showIntroVideo").html("<video autoplay><source src=\"/img/Fjinale-720p.mov\" type=\"video/mp4\"></source></video>");
+		}
+		playScripts([introStep]);
 	}
 	
 	var splitName = function(name){
@@ -304,22 +270,11 @@
 	
 	
 	var setBanner = function(text,background,color){
-		// $("#footer").html(text);
-		// $("#footer").css("color", color);
-		// $("#footer").css("background", background);
 	}
 
-	$('#footer').on('click', function(e){
-		welcome();
-	});
-
-	// var team = function(){
-	// 	impress().goto(0);
-	// 	setBanner("Meet AVA","#82C6E2","white");
-	// }
-
+	
 	var script = function(){
-		impress().goto(0);
+		welcome();
 	}
 
 	script();
