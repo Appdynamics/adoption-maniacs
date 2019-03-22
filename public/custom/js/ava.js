@@ -81,7 +81,7 @@ function avaPlayAudio(uistep) {
         });
         try{
             if(!uistep.played){
-                avaAudioElement.src = "/audio/"+uistep.id+".mp3";
+                avaAudioElement.src = "/audio/"+uistep.audio+".mp3";
                 avaAudioElement.play();
             }
         }catch(e){
@@ -91,8 +91,9 @@ function avaPlayAudio(uistep) {
 }
 
 class UIStep {
-    constructor(id,action,func) {
-        this.id = id;
+    constructor(step,audio,action,func) {
+        this.step = step;
+        this.audio = audio;
         this.func = func;
         if(action == null){
             this.action = "after";
@@ -112,21 +113,38 @@ class UIStep {
     reset(){
         this.played = false;
     }
+
+    listen(id,callback,wait){
+        var uistep = this;
+        $(id).on('click', function(e){
+            e.stopPropagation();
+            playScript(uistep,callback,wait);
+        });
+    }
+}
+
+function playScript(script,callback,wait){
+    playScripts([script],callback,wait);
 }
 
 function playScripts(scripts,callback,wait){
-    playScript(scripts,0,callback,wait);
+    _playScripts(scripts,0,callback,wait);
 }
 
-function playScript(script,i,callback,wait){
+function isFunction(functionToCheck) {
+    return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
+}
+
+function _playScripts(script,i,callback,wait){
     if(script.length > i){
         var uistep = script[i];
+        impress().goto(uistep.step);
         if(uistep.isBefore()){
             if (isFunction(uistep.func)){
                 uistep.run();
             }
         }
-        if(uistep.id){
+        if(uistep.audio){
             avaPlayAudio(uistep).then(function(){
                 if(uistep.isAfter()){
                     if (isFunction(uistep.func)){

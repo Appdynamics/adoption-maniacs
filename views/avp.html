@@ -15,15 +15,16 @@
 				<div id="welcome" class="step slide" data-x="0" data-y="-1500">
 						<p>
 						<ul>
-							<li>Situation : You have been identified as the owner of your AppDynamics SaaS Instance. Please contact us and we can provide credentials to your instance.</li>
-							<li>Complication : Your SaaS Instance is live but no agents have been deployed.</li>
-							<li>Implication : You can use AppDynamics to identify and troubleshoot complex APM issues. This platform is available but not being used.</li>
-							<li>Position : When you deploy the agents you will get visibility into your applications.</li>
-							<li>Action : Please schedule an appointment with our our Adoption team. We will work with you to identify the right use case and team to work with. Please share this with anyone that might be interested in using these licenses.</li>
-							<li>Benefit : AppDynamics is a powerful APM platform that can give you end to end visibility. </li>
+							<li><a id="introNext" href="#">Next</a></li>
+							<li>Situation : <br>You have been identified as the owner of your AppDynamics SaaS Instance. Please contact us and we can provide credentials to your instance.</li>
+							<li><br>Complication : <br>Your SaaS Instance is live but no agents have been deployed.</li>
+							<li><br>Implication : <br>You can use AppDynamics to identify and troubleshoot complex APM issues. This platform is available but not being used.</li>
+							<li><br>Position : <br>When you deploy the agents you will get visibility into your applications.</li>
+							<li><br>Action : <br>Please schedule an appointment with our our Adoption team. We will work with you to identify the right use case and team to work with. Please share this with anyone that might be interested in using these licenses.</li>
+							<li><br>Benefit : <br>AppDynamics is a powerful APM platform that can give you end to end visibility. </li>
 						</ul>
 						</p>
-						<a id="introNext">Next</a>
+
 				</div>
 				
 				<div id="intro" class="step slide" data-x="2000" data-y="-1500">
@@ -42,246 +43,14 @@
 
 	impress().init();
 
-	$('#introNext').on('click', function(e){
-		intro();
+	var helloStep = new UIStep("welcome","hello_audio");
+	playScript(helloStep);
+
+	var introStep = new UIStep("intro","intro_audio","after",function(){
+		$("#showIntroVideo").html("<video autoplay><source src=\"/img/Fjinale-720p.mov\" type=\"video/mp4\"></source></video>");
 	});
-
-	var helloStep = new UIStep("Hello");
-
-	var welcome = function(){
-		impress().goto(0);
-		playScripts([helloStep]);
-	}
-
-	var introStep = new UIStep("intro","after");
-
-	var intro = function (){
-		impress().goto(1);
-		var showIntroMovie = function(){
-			$("#showIntroVideo").html("<video autoplay><source src=\"/img/Fjinale-720p.mov\" type=\"video/mp4\"></source></video>");
-		}
-		playScripts([introStep]);
-	}
+	introStep.listen("#introNext");
 	
-	var splitName = function(name){
-		var n = name.split(".");
-		return n[n.length - 1];
-	}
-	
-	var getBTNames = function(results){
-		
-		var names = "BT ";
-		for (let index = 0; index < results.length; index++) {
-			names += splitName(results[index][0]);
-			if(index == results.length - 2){
-				names += " and BT ";
-			}else{
-				names +=", ";
-			}
-		}
-		return names;
-	}
-
-	var appId = 29;
-	//var appId = 6027;
-	var btId = 3;
-	//var btId = 1003961;
-	//var timeRange = "last_1_day.BEFORE_NOW.-1.-1.1440";
-	var timeRange = "last_6_hour.BEFORE_NOW.-1.-1.360";
-	var btsToInspect = null;
-	var topBTs = function(){
-		
-		avaa_buildBTDashboard(appId,5,timeRange,"topbts",function(bts,results){
-			$("#showContent").html("<img src='/img/controller.png'></img>");
-			btsToInspect = results;
-			impress().goto(4);
-			var script = [];
-			var text1 = "Based on my recommendations here are the top 5 Business Transactions that can be optimized.\n ";
-			var showText1 = function(){
-				setTimeout(function(){
-				}, 2500 );
-			}
-			script.push(new UIStep(text1,showText1));
-			playScript(script,0,function(){
-				setTimeout(function(){
-					btDetails(bts[1]);
-				}, 750 );
-				
-			});
-		});
-	}
-
-	var btDetails = function(bt){
-	
-		var script = [];
-		impress().goto(5);
-
-		var btName = bt.name.replace("."," ");
-		var text1 = "For my demonstration, I will select the "+btName+" Business Transaction. ";
-		var analyze1 = function(){
-			setTimeout(function(){}, 1700 );
-		}
-		script.push(new UIStep(text1,analyze1,"after"));
-		drawTransScoreCard(timeRange,bt,"btDetailsChart");
-		
-		var text21 = "This scorecard report shows this BeeTee's Key Performance Indicators. Average Response times, error, and slow transactions.";
-		var analyze21 = function(){
-			setTimeout(function(){}, 2500 );
-		}
-		script.push(new UIStep(text21,analyze21,"before"));
-
-		var text2 = "Let us take a deeper look";
-		var analyze2 = function(){
-			$("#btDetails").append("<div class=\"loader\">Analyzing...</div>");
-		}
-		script.push(new UIStep(text2,analyze2,"before"));
-		playScript(script,0,function(){
-			analyzeSnapshotsResults(appId,bt,5,function(results){
-				script = [];
-				if(results.errors){
-					displayErrorInfo(script,bt,results.errors);
-				}
-				if(results.veryslow){
-					displaySlowInfo(script,bt,results.verslow);
-				}else{
-					if(results.slow){
-						displaySlowInfo(script,bt,results.slow);
-					}
-				}
-				playScript(script,0,function(){
-					recommendations();
-				},3000);
-				
-			});
-		});
-		
-		
-	}
-
-	var displayErrorInfo = function(script,bt,errorAnalysis){
-		if(errorAnalysis.length>0){
-			$("#btDetailsErrors").html();
-			var text1 = "Here are the exceptions I've found and their counts.";
-			var analyze1 = function(){
-				impress().goto(6);
-				var btDiv = "btDetailsErrors";
-				var data = [];
-				errorAnalysis.forEach(function(err){
-					data.push([err.error.substring(0,100)+" .. ",err.count]);
-				})
-
-				new Table({
-					targetId:btDiv,
-					title:"Top Errors",
-					data:data,
-					order: [[ 1, "desc" ]],
-					columns: [{ title: "Error" },{ title: "Counts" }],
-					options : {
-						"searching": false,
-						"paging": false,
-						"ordering": false,
-						"info": false,
-						columnDefs: [
-                {
-                    "targets": [ 0 ],
-                    "width": "200"
-                }
-            ]
-					},
-					class:"table table-borderless table-striped table-earning"
-				}).draw(function(row){
-				});	
-			}
-			script.push(new UIStep(text1,analyze1,"before"));
-		}
-	}
-
-	var displaySlowInfo = function(script,bt,potentialIssues){
-		var issues = extractPotentialIssues(potentialIssues);
-		if(issues.length>0){
-			var text1 = "Here is what is causing your slow response times for this Business Transaction";
-			var analyze1 = function(){
-				impress().goto(7);
-				$("#btDetailsSlow").html();
-				var btDiv = "btDetailsSlow";
-				displayPotentialIssues(bt,btDiv,"Slow Response Times",issues);
-			}			
-			script.push(new UIStep(text1,analyze1,"after"));
-		}
-	}
-
-	var recommendations = function(){
-		impress().goto(8);
-		var script = [];
-		var text1 = "Here are some recommendations on how to optimize exceptions and further investigate slow response times";
-		var analyze1 = function(){
-		}
-		script.push(new UIStep(text1,analyze1,"after"));
-		playScript(script,0,function(){
-			setTimeout(function(){
-				endanalysis();
-			}, 2000 );
-		});
-	}
-
-	var endanalysis = function(){
-		impress().goto(9);
-		var script = [];
-		var text1 = "This ends my analysis of this business transaction running on the controller.";
-		var analyze1 = function(){
-			setTimeout(function(){}, 2000 );
-		}
-		script.push(new UIStep(text1,analyze1,"after"));
-		playScript(script,0,function(){
-			closing();
-		});
-	}
-	var closing = function(){
-		setBanner("Scale to 1000's customers","#82C6E2","white");
-		impress().goto(10);
-		var script = [];
-		//var text1 = "As a virtual assistant, I can work with thousands of customers as easily as one.  How many consultants would you have to hire to do that?  How much would that cost?  Don't panic, I've got AppDynamics' back.  Invest in my AI so that Chuck will start refferring to David as Mr. MVP instead of AVP";
-		var text1 = "As AppDynamics virtual assistant, I can drive adoption with thousands of customers. Let me help you reach the billion dollar milestone that AppDynamics has committed too.";
-		var analyze1 = function(){
-			$("#closing").html("<video autoplay><source src=\"/img/Fjinale-720p.mov\" type=\"video/mp4\"></source></video>");
-			setTimeout(function(){}, 2000 );
-		}
-		script.push(new UIStep(text1,analyze1,"before"));
-		playScript(script,0,function(){
-			setTimeout(function(){
-				close();
-			}, 1000 );
-		});
-	}
-
-	var close = function(){
-		impress().goto(11);
-		setBanner("Meet AVA","#82C6E2","white");
-		var script = [];
-		var text2 = "I'm AVA, the virtual assistant for ,ALL, AppDynamics customers.";
-		var analyze2 = function(){
-		}
-		script.push(new UIStep(text2,analyze2,"before"));
-		playScript(script,0,function(){
-			
-		});
-	}
-
-	
-	
-	var setBanner = function(text,background,color){
-	}
-
-	
-	var script = function(){
-		welcome();
-	}
-
-	script();
-
-	function isFunction(functionToCheck) {
-		return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
-	}
 
 </script>
 </html>
